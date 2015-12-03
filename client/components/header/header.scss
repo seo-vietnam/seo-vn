@@ -1,0 +1,39 @@
+header.header{
+  animation-duration:400ms !important;
+  background-color:white;
+  color:$gray;
+  box-sizing:border-box;
+  box-shadow:0 6px 4px rgba(0, 0, 0, 0.2);
+  transition:all 250ms ease;
+  min-height: 100px;
+  padding-top: 30px;
+  border-bottom: 1px solid #E5E5E5;
+
+  &--fixed {
+    @media (min-width:$screen-md-min){
+      position: fixed;
+      z-index: 99;
+      right: 0;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  @media (max-width:$screen-sm-max) {
+    .container{
+      width: 100%;
+    }
+  }
+
+  &--transparent.headroom--top {
+    @media (min-width:$screen-md-min) {
+      background-color:transparent;
+      color:white;
+      box-shadow:none;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
