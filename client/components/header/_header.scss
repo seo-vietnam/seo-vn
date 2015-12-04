@@ -1,4 +1,4 @@
-header.header{
+.header{
   animation-duration:400ms !important;
   background-color:white;
   color:$gray;
@@ -34,6 +34,33 @@ header.header{
         color: white;
         text-decoration: none;
       }
+    }
+  }
+
+  &__nav {
+    position: relative;
+    width: 100%;
+    &--right {
+      position: absolute;
+      right: 0;
+      width: 30%;
+      padding-right: 15px;
+      text-align: right;
+    }
+    &--left {
+      position: absolute;
+      left: 0;
+      width: 30%;
+      padding-left: 15px;
+      img {
+        width: auto;
+        height: 50px;
+      }
+    }
+    &--center {
+      margin: 0 auto;
+      width: 40%;
+      text-align: center;
     }
   }
 }

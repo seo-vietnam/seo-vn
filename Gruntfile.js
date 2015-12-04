@@ -360,18 +360,28 @@ module.exports = function (grunt) {
                         'assets/fonts/**/*',
                         'index.html'
                     ]
-                }, {
+                },
+                //    {
+                //    expand: true,
+                //    cwd: '.tmp/images',
+                //    dest: '<%= yeoman.dist %>/client/assets/images',
+                //    src: ['generated/*']
+                //},
+               {
                     expand: true,
-                    cwd: '.tmp/images',
+                    dot: true,
+                    cwd: '<%= yeoman.client %>/assets/images',
                     dest: '<%= yeoman.dist %>/client/assets/images',
-                    src: ['generated/*']
-                }, {
-                    expand: true,
-                    dest: '<%= yeoman.dist %>',
-                    src: [
-                        'package.json',
-                        '<%= yeoman.server %>/**/*'
-                    ]
+                    src: ['**/*.{png,jpg,jpeg,gif,webp,svg}']
+                }
+
+                , {
+                expand: true,
+                dest: '<%= yeoman.dist %>',
+                src: [
+                    'package.json',
+                    '<%= yeoman.server %>/**/*'
+                ]
                 }]
             },
             styles: {
