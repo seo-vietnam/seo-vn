@@ -1,6 +1,7 @@
 {
   "name": "al-booking",
   "version": "0.0.0",
+  
   "dependencies": {
     "angular": "~1.4.0",
     "json3": "~3.3.1",
