@@ -245,7 +245,17 @@ module.exports = function (grunt) {
         },
 
         // Renames files for browser caching purposes
-        filerev: {
+        filerev: {        // The following *-min tasks produce minified files in the dist folder
+        imagemin: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.client %>/assets/images',
+                    src: '{,*/}*.{png,jpg,jpeg,gif,svg}',
+                    dest: '<%= yeoman.dist %>/client/assets/images'
+                }]
+            }
+        },
             dist: {
                 src: [
                     '<%= yeoman.dist %>/client/!(bower_components){,*/}*.{js,css}',

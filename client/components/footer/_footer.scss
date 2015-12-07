@@ -1,6 +1,36 @@
-footer.footer {
-  text-align: center;
+.footer {
   padding: 30px 0;
-  margin-top: 70px;
-  border-top: 1px solid #E5E5E5;
+  border-top: 2px solid $green;
+  &__menu {
+    text-align: center;
+    ul {
+      list-style-type: none;
+      text-align: center;
+      li {
+        display: inline-block;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: -5px;
+        a {
+          color: black;
+          text-decoration: none;
+          &:hover,:visited {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__email {
+
+  }
+
+  &__shares {
+    text-align: right;
+    a {
+      margin-left: 10px;
+    }
+  }
 }

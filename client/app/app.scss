@@ -14,12 +14,21 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
   padding: 0.2em 0;
 }
 
+
+
 // Component styles are injected through grunt
 // injector
-@import 'main/main';
-@import 'main/spotlight';
-@import '../components/footer/footer';
-@import '../components/header/header';
-@import '../components/modal/modal';
-@import '../components/navbar/navbar';
+@import '_fonts.scss';
+@import '_vars.scss';
+@import 'main/_main.scss';
+@import 'main/_spotlight.scss';
+@import '../components/footer/_footer.scss';
+@import '../components/header/_header.scss';
+@import '../components/modal/_modal.scss';
+@import '../components/navbar/_navbar.scss';
 // endinjector
+
+
+body {
+  font-family: $font-medium;
+}
