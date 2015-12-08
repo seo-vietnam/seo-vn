@@ -6,20 +6,20 @@ section.main-body
         .row.home-page__content
             .home-page__content__company-mission
               .home-page__content__company-mission__content
-                h3.home-page__content__company-mission__content__title Company Mission,
-                .home-page__content__company-mission__content__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus.
-                .btn.home-page__content__company-mission__content__link Learn More
+                h3.home-page__content__company-mission__content__title {{App.home.company.title}}
+                .home-page__content__company-mission__content__description {{App.home.company.description}}
+                .btn.home-page__content__company-mission__content__link {{App.button.learnMore}}
 
             .home-page__content__partners
               h3.home-page__content__partners__title
                 .home-page__content__partners__title--bracket {
-                .home-page__content__partners__title--text Our Partners
+                .home-page__content__partners__title--text {{App.home.partner.title}}
                 .home-page__content__partners__title--bracket }
               .row.home-page__content__partners--first
                 .home-page__content__partners__details.col-xs-8
-                  .home-page__content__partners__details__text Advertise your partners and the industries you offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus. . Suspendisse at libero tincidunt, consequat lacus a, tempor tellus.
+                  .home-page__content__partners__details__text {{App.home.partner.description}}
                     .home-page__content__partners__details__text--link
-                      a(href="#") &#8592; Details
+                      a(href="#") &#8592; {{App.button.detail}}
                 .home-page__content__partners__details__branch.col-xs-4
                     img(src="http://placehold.it/300x300?text=Logo" alt="")
               .row.row.home-page__content__partners--second

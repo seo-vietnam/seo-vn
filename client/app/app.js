@@ -33,4 +33,7 @@ angular.module('alBookingApp', [
                 }
             })
         ;
+    })
+    .controller('AppController', function ($rootScope) {
+        $rootScope.App = App;
     });
