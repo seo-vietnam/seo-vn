@@ -1,14 +1,23 @@
-.header__nav
-  .header__nav--right
-    ul
-      li
-        a(href="#") Programs
-      li
-        a(href="#") Partners
-      li
-        a(href="#") About Us
-      li
-        a(href="#") Donate
-      li
-        a(href="#")
-          img(src="http://placehold.it/300x300?text=Logo")
+.container
+  .row
+    .header__content
+      .header__content__logo.col-xs-3
+        img(src="http://placehold.it/80x80?text=Logo")
+      .header__content__menu.col-xs-9
+        .header__content__menu__line-1
+          ul
+            li
+              a(href="#") Log in
+            li
+              a(href="#") Donate
+            li
+              a(href="#") Contact us
+        .header__content__menu__line-2
+          ul
+            li
+              a(href="#") Program
+            li
+              a(href="#")
+                .header__content__menu__line-2--active Admissions
+            li
+              a(href="#") About

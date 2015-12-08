@@ -53,9 +53,7 @@
             <!--</div>-->
         <!--</div>-->
     <!--</navbar>-->
-    <header></header>
-    <div ui-view="content"></div>
-    <footer></footer>
+    <div ui-view="main"></div>
 </div>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -98,10 +96,11 @@
 <!-- build:js(.tmp) app/app.js -->
 <script src="app/app.js"></script>
 <!-- injector:js -->
+<script src="app/apply/apply.controller.js"></script>
 <script src="app/main/main.controller.js"></script>
-<script src="app/main/main.js"></script>
 <script src="components/footer/footer.directive.js"></script>
 <script src="components/header/header.directive.js"></script>
+<script src="components/header/main-header.directive.js"></script>
 <script src="components/modal/modal.service.js"></script>
 <script src="components/navbar/navbar.controller.js"></script>
 <script src="components/navbar/navbar.directive.js"></script>

@@ -1,13 +1,13 @@
 'use strict';
 
 angular.module('alBookingApp')
-    .directive('header', function () {
+    .directive('mainHeader', function () {
         return {
-            templateUrl: 'components/header/header.html',
+            templateUrl: 'components/header/main-header.html',
             restrict: 'E',
             link: function (scope, element) {
-                element.addClass('header').addClass('header--fixed');
-                $("header").headroom({
+                element.addClass('main-header').addClass('main-header--fixed');
+                $("main-header").headroom({
                     "offset": 100,//$(window).height(),//TODO:get 100vh * 1.5
                     "tolerance": {
                         down: 0,
