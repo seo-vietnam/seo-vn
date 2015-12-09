@@ -13,12 +13,13 @@ header
           .side-bar__item(ng-repeat="item in menuFilters")
             a(href="#" ng-click="filter(item.title, $event)")
               h3.side-bar__item__title {{item.title}}
-            .side-bar__item__branch(ng-repeat="gold in item.branches.golds")
-              | {{gold.name}}
-            .side-bar__item__branch(ng-repeat="silver in item.branches.silvers")
-              | {{silver.name}}
-            .side-bar__item__branch(ng-repeat="normal in item.branches.normals")
-              | {{normal.name}}
+            .side-bar__item__branch--container
+              .side-bar__item__branch(ng-repeat="gold in item.branches.golds")
+                | {{gold.name}}
+              .side-bar__item__branch(ng-repeat="silver in item.branches.silvers")
+                | {{silver.name}}
+              .side-bar__item__branch(ng-repeat="normal in item.branches.normals")
+                | {{normal.name}}
       main.col-xs-9
         .row.partners__main
           .branch-grid

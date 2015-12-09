@@ -39,20 +39,20 @@
                     $('.side-bar__item__title').removeClass('side-bar__item__title--active');
                     var element = angular.element(event.currentTarget.firstChild);
                     element.addClass('side-bar__item__title--active');
+                    if (data === 'all') {
+                        $('.side-bar__item__branch--container').show();
+                    } else {
+                        $('.side-bar__item__branch--container').hide();
+                        $(event.currentTarget.nextSibling).show();
+                    }
                 }
             };
 
-            $scope.clickLogo = function(event) {
-                var element = angular.element(event.currentTarget.parentElement);
-                //if (!element.hasClass("branch-grid__item--opacity")) {
-                //
-                //} else {
-                //
-                //}
-                $('.branch-grid__item').addClass("branch-grid__item--opacity");
-
-                element.removeClass("branch-grid__item--opacity");
-            };
+            //$scope.clickLogo = function(event) {
+            //    var element = angular.element(event.currentTarget.parentElement);
+            //    $('.branch-grid__item').addClass("branch-grid__item--opacity");
+            //    element.removeClass("branch-grid__item--opacity");
+            //};
 
             $scope.filter('all', null);
     });
