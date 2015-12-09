@@ -1,7 +1,7 @@
 ﻿.spotlight{
     width:100%;
     position:relative;
-    height:500px;
+    height:384px;
     overflow:hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     color:white;
 
     @media (min-width:$screen-desktop){
-        height:768px;
+        height:512px;
     }
 
     &__bg {
@@ -17,10 +17,10 @@
         top: 0;
         left: 0;
         height:100%;
-        background-image:url(/assets/images/home/spotlight.jpg);
+        width: 100%;
+        background-image:url(/assets/images/home/spotlight.png);
         background-position:center top;
         background-repeat: no-repeat;
-        width: 100%;
         background-attachment:fixed;
         z-index: -1;
         @media (min-width:$screen-desktop){
@@ -56,12 +56,24 @@
                 font-style: italic;
                 line-height: 1.4;
             }
+
+            &__link {
+                margin-top: 50px;
+                a {
+                    position:absolute;
+                    font-size:24px;
+                    font-family: $font-medium;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    color: white;
+                }
+            }
         }
     }
 
     &__link {
         position:absolute;
-        bottom:15%;
+        bottom:30%;
         width: 30%;
         a {
             position:absolute;

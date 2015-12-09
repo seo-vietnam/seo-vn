@@ -1,14 +1,15 @@
-.main-header__nav
-  .main-header__nav--right
-    ul
-      li
-        a(href="#") {{App.homeMenu.item1}}
-      li
-        a(href="#") {{App.homeMenu.item2}}
-      li
-        a(href="#") {{App.homeMenu.item3}}
-      li
-        a(href="#") {{App.homeMenu.item4}}
-      li
-        a(href="#")
-          img(src="http://placehold.it/300x300?text=Logo")
+.container
+  .main-header__nav
+    .main-header__nav--right
+      ul
+        li
+          a(href="{{App.homeMenu.item1.link}}") {{App.homeMenu.item1.name}}
+        li
+          a(href="{{App.homeMenu.item2.link}}") {{App.homeMenu.item2.name}}
+        li
+          a(href="{{App.homeMenu.item3.link}}") {{App.homeMenu.item3.name}}
+        li
+          a(href="{{App.homeMenu.item4.link}}") {{App.homeMenu.item4.name}}
+        li
+          a(href="#")
+            img(src="/assets/images/logo/SEO_Vietnam.jpg")

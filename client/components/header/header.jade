@@ -1,29 +1,25 @@
 .container
   .row
     .header__content
-      .header__content__logo.col-xs-3
-        img(src="http://placehold.it/80x80?text=Logo")
-      .header__content__menu.col-xs-9
+      .header__content__logo.col-xs-2
+        img(src="/assets/images/logo/SEO_Vietnam.jpg")
+      .header__content__menu.col-xs-10
         .header__content__menu__line-1
-          ul
-            li
-              a(href="#") {{App.pageMenu.item1}}
-            li
-              a(href="#") {{App.pageMenu.item2}}
-            li
-              a(href="#") {{App.pageMenu.item3}}
-            li
-              .input-group
-                input.form-control(type="text" placeholder="Search for...")
-                span.input-group-btn
-                  .btn.header__content__menu__line-1__button--color
-                    span.glyphicon.glyphicon-chevron-right.header__content__menu__line-1__icon--color
+          p {{App.pageMenu.login}}
         .header__content__menu__line-2
-          ul
-            li
-              a(href="#") {{App.pageMenu.item4}}
-            li
-              a(href="#")
-                .header__content__menu__line-2--active {{App.pageMenu.item5}}
-            li
-              a(href="#") {{App.pageMenu.item6}}
+          .row
+            .header__content__menu__line-2__item.col-xs-2.col-xs-offset-2
+              a(href="{{App.pageMenu.item1.link}}")
+                p(ng-class="{'header__content__menu--active': isActive(App.pageMenu.item1.name)}") {{App.pageMenu.item1.name}}
+            .header__content__menu__line-2__item.col-xs-2
+              a(href="{{App.pageMenu.item2.link}}" ng-class="{'header__content__menu--active': isActive(App.pageMenu.item2.name)}")
+                p(ng-class="{'header__content__menu--active': isActive(App.pageMenu.item2.name)}") {{App.pageMenu.item2.name}}
+            .header__content__menu__line-2__item.col-xs-2
+              a(href="{{App.pageMenu.item3.link}}" ng-class="{'header__content__menu--active': isActive(App.pageMenu.item3.name)}")
+                p(ng-class="{'header__content__menu--active': isActive(App.pageMenu.item3.name)}") {{App.pageMenu.item3.name}}
+            .header__content__menu__line-2__item.col-xs-2
+              a(href="{{App.pageMenu.item4.link}}" ng-class="{'header__content__menu--active': isActive(App.pageMenu.item4.name)}")
+                p(ng-class="{'header__content__menu--active': isActive(App.pageMenu.item4.name)}") {{App.pageMenu.item4.name}}
+            .header__content__menu__line-2__item.col-xs-2
+              a(href="{{App.pageMenu.item5.link}}" ng-class="{'header__content__menu--active': isActive(App.pageMenu.item5.name)}")
+                p(ng-class="{'header__content__menu--active': isActive(App.pageMenu.item5.name)}") {{App.pageMenu.item5.name}}

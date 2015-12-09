@@ -2,6 +2,7 @@
 (function () {
     angular.module('alBookingApp')
         .controller('PartnersController', function ($scope, $http) {
+            $scope.$parent.activeMenu =  App.pageMenu.item4.name;
             $scope.enableOpacity = false;
             $scope.menuFilters = App.partners.sideBar;
             $scope.branches = [];

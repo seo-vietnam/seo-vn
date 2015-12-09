@@ -7,28 +7,28 @@ var App = {
   },
 
   homeMenu: {
-    item1 : "Programs",
-    item2 : "Partners",
-    item3 : "About Us",
-    item4 : "Donate"
+    item1 : {name: "Programs", link: "/programs"},
+    item2 : {name: "Partners", link: "/partners"},
+    item3 : {name: "About Us", link: "/about-us"},
+    item4 : {name: "Donate", link: "/donate"}
   },
 
   pageMenu: {
-    item1 : "Log in",
-    item2 : "Donate",
-    item3 : "Contact Us",
-    item4 : "Program",
-    item5 : "Admissions",
-    item6 : "About"
+    login: "Log in to your application",
+    item1 : {name: "Program", link: "/program"},
+    item2 : {name: "Apply", link: "/apply"},
+    item3 : {name: "About", link: "/about"},
+    item4 : {name: "Partners", link: "/partners"},
+    item5 : {name: "donate", link: "/donate"}
   },
 
   footer: {
     email: "malnemail@seovn.com",
-    item1 : "Programs.",
-    item2 : "Apply.",
-    item3 : "Partners.",
-    item4 : "About Us.",
-    item5 : "Donate."
+    item1 : {name: "Programs.", link: "/programs"},
+    item2 : {name: "Apply.", link: "/apply"},
+    item3 : {name: "Partners.", link: "/partners"},
+    item4 : {name: "About Us.", link: "/about-us"},
+    item5 : {name: "Donate.", link: "/donate"}
   },
 
   home : {

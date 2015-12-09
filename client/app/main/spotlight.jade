@@ -3,9 +3,7 @@
   //.spotlight__bg(src="/images/bg/top.jpg" alt="spotlight image")
   .container
     .spotlight__content
-      .spotlight__content__logo
-        img(src="http://placehold.it/200x200?text=Logo")
       h1.spotlight__content__tag-line__title {{App.home.spotlight.title}}
       .spotlight__content__tag-line__description {{App.home.spotlight.description}}
-    .spotlight__link
-      a(href="/apply") {{App.home.spotlight.link}}
+      .spotlight__content__tag-line__link
+        a(href="/apply") {{App.home.spotlight.link}}

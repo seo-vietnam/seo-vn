@@ -45,4 +45,8 @@ angular.module('alBookingApp', [
     })
     .controller('AppController', function ($rootScope, $scope) {
         $rootScope.App = App;
+
+        $scope.isActive = function(menu) {
+            return $scope.activeMenu == menu;
+        };
     });
