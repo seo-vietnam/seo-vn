@@ -7,7 +7,7 @@ header
       h1.partners__title {{App.partners.title}}
     .row
       aside.col-xs-3
-        .side-bar
+        .row.side-bar
           a(href="#" ng-click="filter('all', $event)")
             h3.side-bar__item__title.side-bar__item__title--active {{App.partners.sideBarTitle}}
           .side-bar__item(ng-repeat="item in menuFilters")
@@ -20,10 +20,10 @@ header
             .side-bar__item__branch(ng-repeat="normal in item.branches.normals")
               | {{normal.name}}
       main.col-xs-9
-        .partners__main
+        .row.partners__main
           .branch-grid
             .row
-               .branch-grid__item.col-sm-6(ng-repeat="item in branches")
+               .branch-grid__item.col-sm-4(ng-repeat="item in branches")
                   .branch-grid__item__logo--container
                     .branch-grid__item__logo
                       img.branch-grid__item__logo__img(src="/assets/images/logo/{{item.logo}}" alt="")

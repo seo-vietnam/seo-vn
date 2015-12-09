@@ -371,20 +371,20 @@ module.exports = function (grunt) {
                         'assets/**/*',
                         'index.html'
                     ]
-                },
+                }
                 //    {
                 //    expand: true,
                 //    cwd: '.tmp/images',
                 //    dest: '<%= yeoman.dist %>/client/assets/images',
                 //    src: ['generated/*']
                 //},
-               {
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= yeoman.client %>/assets/images',
-                    dest: '<%= yeoman.dist %>/client/assets/images',
-                    src: ['**/*.{png,jpg,jpeg,gif,webp,svg}']
-                }
+               //{
+               //     expand: true,
+               //     dot: true,
+               //     cwd: '<%= yeoman.client %>/assets/images',
+               //     dest: '<%= yeoman.dist %>/client/assets/images',
+               //     src: ['**/*.{png,jpg,jpeg,gif,webp,svg}']
+               // }
 
                 , {
                 expand: true,
