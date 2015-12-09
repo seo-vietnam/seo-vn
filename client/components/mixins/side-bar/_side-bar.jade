@@ -1,0 +1,8 @@
+mixin sideBar(menuFilters)
+   .side-bar
+      h2.side-bar__title View All
+      each filter in menuFilters
+         .side-bar__item
+            h3.side-bar__item__title=filter.title
+            each branch in filter.branches
+               .side-bar__item__branch=branch

@@ -32,8 +32,17 @@ angular.module('alBookingApp', [
                     }
                 }
             })
+            .state('partners', {
+                url: '/partners',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/partners/partners.html',
+                        controller: 'PartnersController'
+                    }
+                }
+            })
         ;
     })
-    .controller('AppController', function ($rootScope) {
+    .controller('AppController', function ($rootScope, $scope) {
         $rootScope.App = App;
     });

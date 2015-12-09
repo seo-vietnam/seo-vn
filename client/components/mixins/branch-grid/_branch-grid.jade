@@ -1,0 +1,10 @@
+mixin branchGrid(items)
+   .branch-grid
+      .row
+         each item in items
+            .branch-grid__item.col-xs-6.col-sm-4.col-md-3
+               .branch-grid__item__logo--container
+                  .branch-grid__item__logo
+                     a(href="#")
+                        img.branch-grid__item__logo__img(src=item.logo alt="")
+               .branch-grid__item__name=item.name

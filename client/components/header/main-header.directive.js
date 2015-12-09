@@ -7,18 +7,18 @@ angular.module('alBookingApp')
             restrict: 'E',
             link: function (scope, element) {
                 element.addClass('main-header').addClass('main-header--fixed');
-                $("main-header").headroom({
-                    "offset": 100,//$(window).height(),//TODO:get 100vh * 1.5
-                    "tolerance": {
-                        down: 0,
-                        up:100
-                    },
-                    "classes": {
-                        "initial": "animated"
-                        //"pinned": "slideInDown",
-                        //"unpinned": "slideOutUp"
-                    }
-                });
+                //$("main-header").headroom({
+                //    "offset": 100,//$(window).height(),//TODO:get 100vh * 1.5
+                //    "tolerance": {
+                //        down: 0,
+                //        up:100
+                //    },
+                //    "classes": {
+                //        "initial": "animated"
+                //        //"pinned": "slideInDown",
+                //        //"unpinned": "slideOutUp"
+                //    }
+                //});
             }
         };
     });
