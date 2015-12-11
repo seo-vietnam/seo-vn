@@ -1,5 +1,43 @@
 header
 .container
-  .row.apply
-    p Content
+  .apply
+    .apply__banner
+      .apply__banner__bg
+      .apply__banner__content
+        h1.apply__banner__title.col-xs-12 {{App.apply.title}}
+        .apply__banner__content__left.col-xs-6
+          .apply__banner__content__left--factor
+            .apply__banner__content__left__hozirontal-line
+            h4.apply__banner__content__left__title {{App.apply.left.fact1.title}}
+            .apply__banner__content__left__description {{App.apply.left.fact1.description}}
+          .apply__banner__content__left--factor
+            .apply__banner__content__left__hozirontal-line
+            h4.apply__banner__content__left__title {{App.apply.left.fact2.title}}
+            .apply__banner__content__left__description {{App.apply.left.fact2.description}}
+            .apply__banner__content__left__link
+              a(href="#") &#8594;&nbsp&nbsp{{App.button.learnMore}}
+        .apply__banner__content__right.col-xs-6
+          h4.apply__banner__content__right__title {{App.apply.right.title}}
+          .apply__banner__content__right__event(ng-repeat="event in App.apply.right.events")
+            p {{event.date}}:&nbsp{{event.name}}
+            p {{event.location}}
+          .apply__banner__content__right__deadline
+            p {{App.apply.right.deadline.date}}:&nbsp{{App.apply.right.deadline.description}}
+          .btn.btn-default.apply__banner__content__right__button
+            span {{App.button.startMyApplication}}
+    .apply__process
+      .row
+        .col-xs-4
+          .apply__process__table__title.apply__process__table__title--right
+            h3 {{App.apply.process.title}}
+        .apply__process__table.col-xs-6
+          .row.apply__process__table__row(ng-repeat="round in App.apply.process.rounds")
+            .apply__process__table__cell.col-xs-4 {{round.name}}
+            .apply__process__table__cell.col-xs-8 {{round.time}}
+      .row
+        .col-xs-12.apply__process__paragraph
+          h2 {{App.apply.process.paragraph.title}}
+          p {{App.apply.process.paragraph.firstLine}}
+          p {{App.apply.process.paragraph.content}}
+          .apply__process__paragraph__horizontal-line
 footer

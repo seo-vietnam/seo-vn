@@ -1,3 +1,110 @@
 .apply {
   margin-top: 120px;
+  &__banner{
+    color: white;
+    overflow: auto;
+    position: relative;
+    min-height: 512px;
+    &__bg {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      min-height: 512px;
+      background-image:url(http://placehold.it/1200x512?text=Image);
+      background-position:center top;
+      background-repeat: no-repeat;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__content {
+      padding: 30px;
+      &__left {
+        text-align: center;
+        &--factor {
+          margin-bottom: 50px;
+        }
+        &__hozirontal-line {
+          display: inline-block;
+          border-bottom: 1px solid;
+          width: 50px;
+          text-align: center;
+        }
+        &__title {
+          //font-weight: bold;
+        }
+        &__description {
+
+        }
+
+        &__link {
+          margin-top: 20px;
+          a {
+            text-decoration: none;
+            color: white;
+
+          }
+
+        }
+      }
+      &__right {
+        text-align: center;
+        &__title {
+
+        }
+        &__event {
+
+        }
+        &__deadline {
+
+        }
+        &__button {
+
+        }
+      }
+    }
+  }
+
+  &__process {
+    padding: 50px;
+    &__table {
+      border-bottom: 1px solid;
+      border-right: 1px solid;
+      &__title {
+        padding-right: 20px;
+        &--right {
+          float: right;
+        }
+        h3 {
+          display: table-caption;
+          text-align: right;
+          color: $green;
+          font-weight: bold;
+        }
+      }
+
+      &__row {
+
+      }
+      &__cell {
+        padding: 15px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        text-align: center;
+      }
+    }
+
+    &__paragraph {
+      padding-top: 20px;
+      text-align: center;
+      &__horizontal-line {
+        display: inline-block;
+        border-bottom: 1px solid;
+        width: 50%;
+        margin-top: 30px;
+      }
+    }
+  }
 }

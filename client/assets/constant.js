@@ -3,7 +3,8 @@ var App = {
   button: {
     learnMore : "Learn More",
     detail : "Detail",
-    search: "Search"
+    search: "Search",
+    startMyApplication: "Start My Application"
   },
 
   homeMenu: {
@@ -45,6 +46,38 @@ var App = {
       title : "Our Partners",
       description: "Advertise your partners and the industries you offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus. . Suspendisse at libero tincidunt, consequat lacus a, tempor tellus."
     }
+  },
+
+  apply: {
+    title: "What To Know Before Applying",
+    left: {
+      fact1: {title: "Fact 1 to know", description: "adadad adad"},
+      fact2: {title: "Fact 2 to know", description: "adadad adad"},
+    },
+    right: {
+      title: "Dates and Deadlines",
+      events: [
+        {date: "dd/mm/yy", name:"Event", location: "Location"},
+        {date: "dd/mm/yy", name:"Event 2", location: "Location 2"}
+      ],
+      deadline: {date: "dd/mm/yy", description: "Deadline to Apply for Summer Program 2016"}
+    },
+    process: {
+      title: "Application Process Timeline",
+      rounds: [
+        {name: "Round 1", time: "Time and Date"},
+        {name: "Round 2", time: "Time and Date"},
+        {name: "Round 3", time: "Time and Date"},
+        {name: "Round Offers", time: "Time and Date"},
+      ],
+      paragraph: {
+        title: "Block of text. Testimony? More details and descriptions?",
+        firstLine: "To be discussed.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus."
+      }
+    }
+
+
   },
 
   partners : {
