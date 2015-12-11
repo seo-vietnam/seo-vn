@@ -1,0 +1,65 @@
+include ../../components/mixins/common-grid/_common-grid.jade
+header
+.past-programs
+  .container
+    .row
+      h1.past-programs__title {{App.pastPrograms.title}}
+    .row.past-programs__content
+      aside.col-xs-3
+        .row.side-bar
+          .side-bar__item(ng-repeat="item in menuFilters")
+            a(href="{{item.link}}")
+              h4(ng-class="{'side-bar__item--active': item.active}").side-bar__item__title {{item.title}}
+            .side-bar__item__branch--container-display
+              .side-bar__item__branch(ng-repeat="subItem in item.items")
+                a(href="{{subItem.link}}")
+                 p(ng-class="{'side-bar__item--active': subItem.active}") {{subItem.title}}
+      main.col-xs-9
+        .row.past-programs__content__main
+          .past-programs__content__main__line {{App.pastPrograms.description.title}}
+          .past-programs__content__main__line {{App.pastPrograms.description.text}}
+      h2.col-xs-offset-3.col-xs-9.past-programs__timeline__title {{App.pastPrograms.timeline.title}}
+    .row
+      .col-xs-12.past-programs__timeline
+        .past-programs__timeline__chart
+          ul
+            li.past-programs__timeline__chart__item(ng-repeat="item in App.pastPrograms.timeline.chart")
+              .past-programs__timeline__chart__item__info
+                .past-programs__timeline__chart__item__info--container
+                  .past-programs__timeline__chart__item__info__line
+                    .past-programs__timeline__chart__item__info__line--number {{item.interns.count}}
+                    |&nbsp
+                    .past-programs__timeline__chart__item__info__line--subfix {{item.interns.subfix}}
+                  .past-programs__timeline__chart__item__info__line
+                    .past-programs__timeline__chart__item__info__line--number {{item.companies.count}}
+                    |&nbsp
+                    .past-programs__timeline__chart__item__info__line--subfix {{item.companies.subfix}}
+              .past-programs__timeline__chart__vertical-line
+
+        .past-programs__timeline__chart
+          ul
+            li.past-programs__timeline__chart__item(ng-repeat="item in App.pastPrograms.timeline.chart")
+              .past-programs__timeline__chart__item__year
+                a(href="#") {{item.year}}
+    .row
+      .col-xs-12
+        .past-programs__instruction
+          h3.past-programs__instruction__title {{App.pastPrograms.instruction}}
+    .row
+      .col-xs-12
+        .grid-container
+          -
+            items1 = [{header: "2014", title: 'Title something', background_color: '#fff', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: 'http://placehold.it/600x300?text=Logo'}]
+          +commondGrid(items1, "past-program__square_grid", true)
+          +commondGrid(items1, "past-program__square_grid", false)
+    .row
+      .col-xs-12
+        .grid-container
+          -
+            items1 = [{header: "2013", title: 'Title something', background_color: '#fff', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: 'http://placehold.it/600x300?text=Logo'}, {title: 'Title something', background_color: '#fff', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: 'http://placehold.it/600x300?text=Logo'}]
+          +commondGrid(items1, "past-program__square_grid", true)
+    .row
+      .col-xs-12
+        .past-programs__continue
+          h3.past-programs__continue__title {{App.pastPrograms.continue}}
+footer

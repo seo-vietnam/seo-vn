@@ -146,5 +146,78 @@ var App = {
         owner: "Tony Ngo, Chairman and Founder"
       }
     }
+  },
+
+  pastPrograms : {
+    title : "SEO-VN Summer Program",
+    description: {
+      title: "Insert quote or descriptive text block.",
+      text: "Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te. Et priimpedit rationibus, modo commune qualis-que usu ei, nam eu habeo expetenda."
+    },
+    instruction: "Select a year, or just scroll.",
+    continue: "(... until 2009)",
+    sideBar : [
+      {
+        title: "Program Overview",
+        link: "/programs",
+        active: false,
+        items: [{title: "Career program", active: false, link: "/programs"}, {title: "Momentum Program", active: false, link: "#"}]
+      }, {
+        title: "Apply",
+        link: "/apply",
+        active: false,
+        items: []
+      }, {
+        title: "Be a partner",
+        link: "/partners",
+        active: false,
+        items: []
+      }, {
+        title: "Past programs",
+        link: "/past-programs",
+        active: true,
+        items: []
+      }
+    ],
+    timeline: {
+      title: "SEO-VN through History",
+      chart: [
+        {
+          year: 2009,
+          interns: {count: 5, subfix: "Interns"},
+          companies: {count: 1, subfix: "Company"}
+        },
+        {
+          year: 2010,
+          interns: {count: 15, subfix: "Interns"},
+          companies: {count: 16, subfix: "Companies"}
+        },
+        {
+          year: 2011,
+          interns: {count: 26, subfix: "Interns"},
+          companies: {count: 13, subfix: "Companies"}
+        },
+        {
+          year: 2012,
+          interns: {count: 27, subfix: "Interns"},
+          companies: {count: 18, subfix: "Companies"}
+        },
+        {
+          year: 2013,
+          interns: {count: 37, subfix: "Interns"},
+          companies: {count: 18, subfix: "Companies"}
+        },
+        {
+          year: 2014,
+          interns: {count: 57, subfix: "Interns"},
+          companies: {count: 28, subfix: "Companies"}
+        },
+        {
+          year: 2015,
+          interns: {count: 66, subfix: "Interns"},
+          companies: {count: 33, subfix: "Companies"}
+        }
+      ]
+    }
   }
 };

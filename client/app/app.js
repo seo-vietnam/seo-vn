@@ -50,6 +50,15 @@ angular.module('alBookingApp', [
                     }
                 }
             })
+            .state('pastPrograms', {
+                url: '/past-programs',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/past-programs/past-programs.html',
+                        controller: 'PastProgramsController'
+                    }
+                }
+            })
         ;
     })
     .controller('AppController', function ($rootScope, $scope) {
