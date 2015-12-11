@@ -378,7 +378,7 @@ module.exports = function (grunt) {
                 //    dest: '<%= yeoman.dist %>/client/assets/images',
                 //    src: ['generated/*']
                 //},
-               //{
+               //,{
                //     expand: true,
                //     dot: true,
                //     cwd: '<%= yeoman.client %>/assets/images',

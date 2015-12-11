@@ -1,36 +1,42 @@
 .side-bar {
   padding: 0 30px 0 15px;
+
   a {
     text-decoration: none;
     color: black;
-    &:hover, &:visited {
+
+    &:hover {
       color: $green;
     }
   }
 
   &__item {
     border-top: 2px solid black;
-    padding-bottom: 15px;
     h3 {
       margin-top: 15px;
     }
     &__title {
       text-transform: uppercase;
       font-family: $font-bold;
-
-      &--active {
-        color: $green;
-      }
     }
 
     &__branch {
       font-family: $font-medium;
       font-weight: bold;
-      line-height: 1.5;
+      line-height: 1.7;
 
       &--container {
-
+        display: none;
+        padding-bottom: 15px;
       }
+
+      &--container-display {
+        margin-bottom: 15px;
+      }
+    }
+
+    &--active {
+      color: $green;
     }
   }
 }

@@ -38,6 +38,13 @@
         p {
           text-transform: uppercase;
         }
+        a {
+          text-decoration: none;
+          color: black;
+          &:hover {
+            color: $green;
+          }
+        }
       }
 
       &__line-2 {
@@ -50,7 +57,7 @@
             font-size: 18px;
             font-weight: bold;
             text-transform: uppercase;
-            &:hover,:visited {
+            &:hover {
               color: $green;
             }
           }

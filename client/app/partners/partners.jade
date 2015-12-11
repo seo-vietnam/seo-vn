@@ -1,5 +1,3 @@
-include ../../components/mixins/side-bar/_side-bar.jade
-include ../../components/mixins/branch-grid/_branch-grid.jade
 header
 .partners
   .container
@@ -9,16 +7,16 @@ header
       aside.col-xs-3
         .row.side-bar
           a(href="#" ng-click="filter('all', $event)")
-            h3.side-bar__item__title.side-bar__item__title--active {{App.partners.sideBarTitle}}
+            h4.side-bar__item__title.side-bar__item--active {{App.partners.sideBarTitle}}
           .side-bar__item(ng-repeat="item in menuFilters")
             a(href="#" ng-click="filter(item.title, $event)")
-              h3.side-bar__item__title {{item.title}}
+              h4.side-bar__item__title {{item.title}}
             .side-bar__item__branch--container
-              .side-bar__item__branch(ng-repeat="gold in item.branches.golds")
+              .side-bar__item__branch(ng-repeat="gold in item.items.golds")
                 | {{gold.name}}
-              .side-bar__item__branch(ng-repeat="silver in item.branches.silvers")
+              .side-bar__item__branch(ng-repeat="silver in item.items.silvers")
                 | {{silver.name}}
-              .side-bar__item__branch(ng-repeat="normal in item.branches.normals")
+              .side-bar__item__branch(ng-repeat="normal in item.items.normals")
                 | {{normal.name}}
       main.col-xs-9
         .row.partners__main

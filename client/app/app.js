@@ -41,6 +41,15 @@ angular.module('alBookingApp', [
                     }
                 }
             })
+            .state('programs', {
+                url: '/programs',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/programs/programs.html',
+                        controller: 'ProgramsController'
+                    }
+                }
+            })
         ;
     })
     .controller('AppController', function ($rootScope, $scope) {

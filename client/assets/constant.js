@@ -15,7 +15,7 @@ var App = {
 
   pageMenu: {
     login: "Log in to your application",
-    item1 : {name: "Program", link: "/program"},
+    item1 : {name: "Program", link: "/programs"},
     item2 : {name: "Apply", link: "/apply"},
     item3 : {name: "About", link: "/about"},
     item4 : {name: "Partners", link: "/partners"},
@@ -50,50 +50,101 @@ var App = {
   partners : {
     title: "Our Partners",
     sideBarTitle: "View All",
-    sideBar: [
+    sideBars: [
       {
         title: "Finance",
-        branches: {
+        items: {
           golds: [{name: "EY", logo: "EY.png"}, {name: "PwC", logo: "PWC.png"}],
           silvers: [{name: "Horizon", logo: "Horizon.jpg"}, {name: "VinaCapital", logo: "VinaCapital.jpg"}, {name: "HSC", logo: "HSC.jpg"}],
           normals:[{name: "VIG", logo: "VIG.png"}, {name: "Indochina Capital", logo: "Indochina_Capital.jpg"}, {name: "ACB", logo: "ACB.png"}, {name: "SSI", logo: "SSI.jpg"}]
         }
       }, {
         title: "Technology",
-        branches: {
+        items: {
           golds: [],
           silvers: [],
           normals:[{name: "M-Service", logo: "M_Service.png"}, {name: "Zalora", logo: "Zalora_Vietnam.jpg"}, {name: "Lazada", logo: "Lazada_VN.png"}, {name: "iVivu", logo: "ivivu.png"}, {name: "Tiki", logo: "Tiki_VN.png"}]
         }
       }, {
         title: "Media",
-        branches: {
+        items: {
           golds: [{name: "Vietnam Esports", logo: "VN_Esports.png"}],
           silvers: [],
           normals:[{name: "VNG", logo: "VNG.jpg"}, {name: "XLE", logo: "XLE_Group.png"}, {name: "YanTV", logo: "YAN.jpg"}]
         }
       }, {
         title: "FMCG",
-        branches: {
+        items: {
           golds: [{name: "Vinataba-Phillip Morris", logo: "PM-Vinataba.jpg"}],
           silvers: [{name: "Kinh Do (KDC)", logo: "Kinh_Do.png"}],
           normals:[]
         }
       }, {
         title: "Ngo",
-        branches: {
+        items: {
           golds: [],
           silvers: [],
           normals:[{name: "San Art", logo: "San_Art.png"}, {name: "LIN", logo: "LIN.png"}]
         }
       }, {
         title: "Education",
-        branches: {
+        items: {
           golds: [],
           silvers: [{name: "Everest Education", logo: "E2.gif"}, {name: "Yola", logo: "Yola.jpg"}],
           normals:[]
         }
       }
     ]
+  },
+
+  program : {
+    title : "SEO-VN Summer Program",
+    sideBar : [
+      {
+        title: "Program Overview",
+        link: "/programs",
+        active: true,
+        items: [{title: "Career program", active: true, link: "/programs"}, {title: "Momentum Program", active: false, link: "#"}]
+      }, {
+        title: "Apply",
+        link: "/apply",
+        active: false,
+        items: []
+      }, {
+        title: "Be a partner",
+        link: "/partners",
+        active: false,
+        items: []
+      }, {
+        title: "Past programs",
+        link: "/past-programs",
+        active: false,
+        items: []
+      }
+    ],
+    content: {
+      introduction: {
+        title: "Join us, because we...",
+        lines: [
+          {keyword: "Connect", text: "high-achieving students with opportuni-ties at leading businesses and NPOs in Vietnam."},
+          {keyword: "Develop", text: "outstanding young professionals through a series of rigorous training, networking events, and mentoring opportunities."},
+          {keyword: "Inspire", text: "a sense of social responsibilities through communities projects."}
+        ]
+      },
+      globalPresence: {
+        title: "Our Global Presence",
+        image: "http://placehold.it/1200x512?text=Image",
+        description: ["Optional text block about global presence.", "No nulla debet percipitur vim, cu sed case instructior. Nominavi tacimates ut vel. Nibh nemore dicunt ei qui, ex enim soleat dissentiet mei."]
+      },
+      statistic: {
+        title: "2015 Internship Statistics",
+        image: "http://placehold.it/992x512?text=Image",
+        description: ["Optional text block about internship.", "No nulla debet percipitur vim, cu sed case instructior. Nominavi tacimates ut vel. Nibh nemore dicunt ei qui, ex enim soleat dissentiet mei."]
+      },
+      speech: {
+        text: "It does not matter where you start, it matters how fast you grow.",
+        owner: "Tony Ngo, Chairman and Founder"
+      }
+    }
   }
 };

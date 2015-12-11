@@ -1,0 +1,70 @@
+.programs {
+  padding-top: 110px;
+  background-color: $very-light-gray;
+
+  .container {
+    background-color: white;
+  }
+  &__title {
+    padding: 20px 0 30px 0;
+    text-align: center;
+    color: $green;
+    font-size: 54px;
+  }
+
+  &__main {
+    margin-right: 15px;
+    &__intro {
+      font-size: 18px;
+      font-family: $font-bold;
+      border-bottom: 1px solid;
+      &__line {
+        padding-bottom: 10px;
+        &--key {
+          display: inline;
+          color: $green;
+        }
+        &--text {
+          display: inline;
+        }
+      }
+    }
+
+    &__block {
+      padding-bottom: 20px;
+      border-bottom: 1px solid;
+      &__title {
+        text-align: center;
+        color: $green;
+        padding-bottom: 10px;
+        &--bold {
+          font-weight: bold;
+        }
+      }
+      &__img{
+        padding-bottom: 10px;
+        width: 100%;
+        height: auto;
+      }
+      &__line {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+
+      &__speech {
+        text-align: right;
+        margin: 100px 0 50px 0;
+        color: $green;
+        &__text {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        &__owner {
+          font-size: 18px;
+          font-style: italic;
+        }
+      }
+
+  }
+}
