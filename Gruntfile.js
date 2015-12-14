@@ -368,6 +368,7 @@ module.exports = function (grunt) {
                         'bower_components/**/*',
                         'assets/images/{,*/}*.{webp}',
                         'assets/fonts/**/*',
+                        'fonts/**/*',
                         'assets/**/*',
                         'index.html'
                     ]
@@ -378,13 +379,13 @@ module.exports = function (grunt) {
                 //    dest: '<%= yeoman.dist %>/client/assets/images',
                 //    src: ['generated/*']
                 //},
-               //,{
-               //     expand: true,
-               //     dot: true,
-               //     cwd: '<%= yeoman.client %>/assets/images',
-               //     dest: '<%= yeoman.dist %>/client/assets/images',
-               //     src: ['**/*.{png,jpg,jpeg,gif,webp,svg}']
-               // }
+               ,{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.client %>/assets/images',
+                    dest: '<%= yeoman.dist %>/client/assets/images',
+                    src: ['**/*.{png,jpg,jpeg,gif,webp,svg}']
+                }
 
                 , {
                 expand: true,

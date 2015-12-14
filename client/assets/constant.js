@@ -35,11 +35,11 @@ var App = {
   home : {
     spotlight: {
       title: "Make an impact.",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend.",
+      description: "Sponsors for Educational Opportunity Vietnam (SEO-Vietnam) provides superior educational and career programs to students to maximize their opportunities for professional success. Join us today to gain access to the most powerful career network in Vietnam.",
       link: "Apply Now"
     },
     company : {
-      title: "Company Mission,",
+      title: "SEO-Vietnam Mission:",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus.",
     },
     "partner" : {
@@ -51,8 +51,8 @@ var App = {
   apply: {
     title: "What To Know Before Applying",
     left: {
-      fact1: {title: "Fact 1 to know", description: "adadad adad"},
-      fact2: {title: "Fact 2 to know", description: "adadad adad"},
+      fact1: {title: "Fact 1 to know", description: "Our 2016 summer internship program’s application is Check your eligibility"},
+      fact2: {title: "Fact 2 to know", description: "Candidates must EITHER be enrolled in an undergraduate/graduate program OR graduate no sooner than December 2015"}
     },
     right: {
       title: "Dates and Deadlines",
@@ -76,8 +76,6 @@ var App = {
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus."
       }
     }
-
-
   },
 
   partners : {
@@ -87,29 +85,133 @@ var App = {
       {
         title: "Finance",
         items: {
-          golds: [{name: "EY", logo: "EY.png"}, {name: "PwC", logo: "PWC.png"}],
-          silvers: [{name: "Horizon", logo: "Horizon.jpg"}, {name: "VinaCapital", logo: "VinaCapital.jpg"}, {name: "HSC", logo: "HSC.jpg"}],
-          normals:[{name: "VIG", logo: "VIG.png"}, {name: "Indochina Capital", logo: "Indochina_Capital.jpg"}, {name: "ACB", logo: "ACB.png"}, {name: "SSI", logo: "SSI.jpg"}]
+          golds: [
+            {
+              name: "EY",
+              logo: "EY.png",
+              description: "EY is a multinational professional services firm headquartered in London, United Kingdom. It is one of the “Big Four” audit firms, and is the third largest professional services firm in the world by aggregated revenue in 2014, after PwC and Deloitte."
+            },
+            {
+              name: "PwC",
+              logo: "PWC.png",
+              description: " PricewaterhouseCoopers is a multinational professional services network. It is the largest professional services firm in the world, and is one of the “Big Four” auditors."
+            }
+          ],
+          silvers: [
+            {
+              name: "Horizon",
+              logo: "Horizon.jpg",
+              description: "Horizon Capital Group, through its subsidiaries, provides investment banking, corporate finance advisory, securities brokerage, and asset management services. The firm was founded in 2005, and its subsidiaries include Horizon Securities Corporation, Horizon Capital Advisers, and Horizon Capital Assets Management."
+            },
+            {
+              name: "VinaCapital",
+              logo: "VinaCapital.jpg",
+              description: "VinaCapital is a leading investment management and real estate development firm in Vietnam, with a diversified portfolio of USD1.5 billion in assets under management. VinaCapital was founded in 2003 and boasts a team of managing directors who bring extensive international finance and investment experience to the firm."
+            },
+            {
+              name: "HSC",
+              logo: "HSC.jpg",
+              description: "Ho Chi Minh City Securities Corporation (HSC) is a leading and award-winning professional securities brokerage and equity firm in Vietnam. HSC delivers a comprehensive list of financial services for Private and Institutional Clients, providing professional investment advisory backed by solid, trusted research."
+            }
+          ],
+          normals:[
+            {
+              name: "VIG",
+              logo: "VIG.png",
+              description: "VI (Vietnam Investments) Group is a private equity firm that focuses on high growth businesses in Vietnam. The firm makes minority and control equity investments in many industries, including financial services, logistics & transportation, media & entertainment, tourism & hospitality, housing development, manufacturing, F&B and healthcare."
+            },
+            {
+              name: "Indochina Capital",
+              logo: "Indochina_Capital.jpg",
+              description: "Indochina Capital:Founded in 1999, Indochina Capital is one of Vietnam’s leading financial services and investment firms active in asset management, financial and strategic advisory businesses. Indochina Capital manages several funds, including three private, close-ended real estate funds, as well as a series of managed accounts."
+            },
+            {
+              name: "ACB",
+              logo: "ACB.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "SSI",
+              logo: "SSI.jpg",
+              description: "Saigon Securities Inc. is a leading and reputable financial corporation in Vietnamese market. With a sound financial potential, a large and professional employees of the company, SSI always provides to all its customers the outstanding level of products and services and maximizing shareholders' interest. SSI has an extensive branch network in Vietnam at major cities such as Hanoi, Ho Chi Minh City, Nha Trang, Vung Tau."
+            }
+          ]
         }
       }, {
         title: "Technology",
         items: {
           golds: [],
           silvers: [],
-          normals:[{name: "M-Service", logo: "M_Service.png"}, {name: "Zalora", logo: "Zalora_Vietnam.jpg"}, {name: "Lazada", logo: "Lazada_VN.png"}, {name: "iVivu", logo: "ivivu.png"}, {name: "Tiki", logo: "Tiki_VN.png"}]
+          normals:[
+            {
+              name: "M-Service",
+              logo: "M_Service.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "Zalora",
+              logo: "Zalora_Vietnam.jpg",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "Lazada",
+              logo: "Lazada_VN.png",
+              description: "Lazada is part of Lazada Group - a privately owned e-commerce company headquartered in Sngapore that was found by Rocket Internet in 2011 with the goal of being “the Amazon.com of Southeast Asia.” Lazada’s websites started out three years ago as inventory-based direct retailers and operate sites in Indonesia, Malaysia, the Philippines, Singapore, Thailand and Vietnam."
+            },
+            {
+              name: "iVivu",
+              logo: "ivivu.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "Tiki",
+              logo: "Tiki_VN.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            }
+          ]
         }
       }, {
         title: "Media",
         items: {
-          golds: [{name: "Vietnam Esports", logo: "VN_Esports.png"}],
+          golds: [
+            {
+              name: "Vietnam Esports",
+              logo: "VN_Esports.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            }],
           silvers: [],
-          normals:[{name: "VNG", logo: "VNG.jpg"}, {name: "XLE", logo: "XLE_Group.png"}, {name: "YanTV", logo: "YAN.jpg"}]
+          normals:[
+            {
+              name: "VNG",
+              logo: "VNG.jpg",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "XLE",
+              logo: "XLE_Group.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "YanTV",
+              logo: "YAN.jpg",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            }]
         }
       }, {
         title: "FMCG",
         items: {
-          golds: [{name: "Vinataba-Phillip Morris", logo: "PM-Vinataba.jpg"}],
-          silvers: [{name: "Kinh Do (KDC)", logo: "Kinh_Do.png"}],
+          golds: [
+            {
+              name: "Vinataba-Phillip Morris",
+              logo: "PM-Vinataba.jpg",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            }],
+          silvers: [
+            {
+              name: "Kinh Do (KDC)",
+              logo: "Kinh_Do.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            }],
           normals:[]
         }
       }, {
@@ -117,13 +219,35 @@ var App = {
         items: {
           golds: [],
           silvers: [],
-          normals:[{name: "San Art", logo: "San_Art.png"}, {name: "LIN", logo: "LIN.png"}]
+          normals:[
+            {
+              name: "San Art",
+              logo: "San_Art.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "LIN",
+              logo: "LIN.png",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            }
+          ]
         }
       }, {
         title: "Education",
         items: {
           golds: [],
-          silvers: [{name: "Everest Education", logo: "E2.gif"}, {name: "Yola", logo: "Yola.jpg"}],
+          silvers: [
+            {
+              name: "Everest Education",
+              logo: "E2.gif",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            },
+            {
+              name: "Yola",
+              logo: "Yola.jpg",
+              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+            }
+          ],
           normals:[]
         }
       }
@@ -166,7 +290,7 @@ var App = {
       },
       globalPresence: {
         title: "Our Global Presence",
-        image: "http://placehold.it/1200x512?text=Image",
+        image: "/assets/images/programs/map.png",
         description: ["Optional text block about global presence.", "No nulla debet percipitur vim, cu sed case instructior. Nominavi tacimates ut vel. Nibh nemore dicunt ei qui, ex enim soleat dissentiet mei."]
       },
       statistic: {
@@ -251,6 +375,42 @@ var App = {
           companies: {count: 33, subfix: "Companies"}
         }
       ]
-    }
+    },
+    histories: [
+      {
+        year: 2015,
+        events: [
+          {
+            title: "Title something",
+            description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis",
+            image: "/assets/images/programs/past/2015_1.jpg",
+            type: 1
+          },
+          {
+            title: "Title something",
+            description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis",
+            image: "/assets/images/programs/past/2015_2.jpg",
+            type: 2
+          }
+        ]
+      },
+      {
+        year: 2014,
+        events: [
+          {
+            title: "Title something",
+            description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis",
+            image: "/assets/images/programs/past/2014.jpg",
+            type: 1
+          },
+          {
+            title: "Title something",
+            description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis",
+            image: "/assets/images/programs/past/2014_1.jpg",
+            type: 2
+          }
+        ]
+      }
+    ]
   }
 };

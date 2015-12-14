@@ -23,7 +23,7 @@ header
             p {{event.location}}
           .apply__banner__content__right__deadline
             p {{App.apply.right.deadline.date}}:&nbsp{{App.apply.right.deadline.description}}
-          .btn.btn-default.apply__banner__content__right__button
+          .btn.apply__banner__content__right__button
             span {{App.button.startMyApplication}}
     .apply__process
       .row
@@ -40,4 +40,25 @@ header
           p {{App.apply.process.paragraph.firstLine}}
           p {{App.apply.process.paragraph.content}}
           .apply__process__paragraph__horizontal-line
+    .apply__carousel
+      .row
+        .owl-carousel.apply__carousel--container
+          .apply__carousel__item
+            .apply__carousel__item__left.col-xs-4
+              img.apply__carousel__item__left__bg(src="http://placehold.it/300x200?text=Image")
+            .apply__carousel__item__right.col-xs-8
+              .apply__carousel__item__right__text
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend.
+              .apply__carousel__item__right__footer
+                p Past Applicant Name
+                p School Year
+          .apply__carousel__item
+            .apply__carousel__item__left.col-xs-4
+              img.apply__carousel__item__left__bg(src="http://placehold.it/300x200?text=Image")
+            .apply__carousel__item__right.col-xs-8
+              .apply__carousel__item__right__text
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend.
+              .apply__carousel__item__right__footer
+                p Past Applicant Name
+                p School Year
 footer
