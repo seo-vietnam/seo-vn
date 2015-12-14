@@ -127,11 +127,11 @@
     }
   }
 
-  &__continue {
-    padding-bottom: 30px;
-    &__title {
-      text-align: center;
-      font-weight: bold;
+  &__history {
+    &:nth-last-child(1) {
+      .grid-container {
+        border: 0;
+      }
     }
   }
 }

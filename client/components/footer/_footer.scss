@@ -31,6 +31,14 @@
     text-align: right;
     a {
       margin-left: 10px;
+      text-decoration: none;
+      color: $green;
+      &:hover {
+        color: $light-green;
+      }
+      i {
+        font-size: 40px;
+      }
     }
   }
 }

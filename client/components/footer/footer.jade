@@ -12,13 +12,15 @@
           a(href="{{App.footer.item4.link}}") {{App.footer.item4.name}}
         li
           a(href="{{App.footer.item5.link}}") {{App.footer.item5.name}}
-    .footer__email.col-xs-6
-      p Email
-      p {{App.footer.email}}
+    .col-xs-6
+      p Email:
+      p.footer__email
+        a(href="mailto:{{App.footer.email}}")
+         span {{App.footer.email}}
     .footer__shares.col-xs-6
+      a(href="http://facebook.com/seovie")
+        i.fa.fa-facebook-square
+      a(href="http://www.youtube.com/user/seovietnam2012")
+        i.fa.fa-youtube-square
       a(href="#")
-        img(src="http://placehold.it/32x32?text=Facebook")
-      a(href="#")
-        img(src="http://placehold.it/32x32?text=Youtube")
-      a(href="#")
-        img(src="http://placehold.it/32x32?text=Intagram")
+        i.fa.fa-instagram

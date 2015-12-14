@@ -24,16 +24,18 @@ header
           .apply__banner__content__right__deadline
             p {{App.apply.right.deadline.date}}:&nbsp{{App.apply.right.deadline.description}}
           .btn.apply__banner__content__right__button
-            span {{App.button.startMyApplication}}
+            a(href="http://apply.seo-vietnam.org/Account/Login")
+              span {{App.button.startMyApplication}}
     .apply__process
       .row
         .col-xs-4
           .apply__process__table__title.apply__process__table__title--right
             h3 {{App.apply.process.title}}
-        .apply__process__table.col-xs-6
-          .row.apply__process__table__row(ng-repeat="round in App.apply.process.rounds")
-            .apply__process__table__cell.col-xs-4 {{round.name}}
-            .apply__process__table__cell.col-xs-8 {{round.time}}
+        .apply__process__table.col-xs-7
+          table.table.table-bordered
+            tr(ng-repeat="round in App.apply.process.rounds")
+              td.apply__process__table__cell--name {{round.name}}
+              td.apply__process__table__cell--time {{round.time}}
       .row
         .col-xs-12.apply__process__paragraph
           h2 {{App.apply.process.paragraph.title}}

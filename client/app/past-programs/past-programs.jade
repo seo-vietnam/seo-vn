@@ -45,34 +45,30 @@ header
       .col-xs-12
         .past-programs__instruction
           h3.past-programs__instruction__title {{App.pastPrograms.instruction}}
-    .row
+
+    .row.past-programs__history(ng-repeat="history in App.pastPrograms.histories")
       .col-xs-12
-        .grid-container(id="2015")
-          -
-            items1 = [{header: "2015", title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: '/assets/images/programs/past/2015_1.jpg'}, {title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: '/assets/images/programs/past/2015_2.jpg'}]
-          +commondGrid(items1, 2015, "past-program__square_grid", true)
-    .row
-      .col-xs-12
-        .grid-container(id="2014")
-          -
-            items1 = [{header: "2014", title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: '/assets/images/programs/past/2014.jpg'}, {title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: '/assets/images/programs/past/2015_1.jpg'}]
-          +commondGrid(items1, 2014, true)
-    .row
-      .col-xs-12
-        .grid-container(id="2013")
-          -
-            items1 = [{header: "2013", title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: '/assets/images/programs/past/2013_1.jpg'}, {title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: '/assets/images/programs/past/2013_2.jpg'}]
-          +commondGrid(items1, 2013, true)
-    .row
-      .col-xs-12
-        .grid-container(id="2012")
-          -
-            items1 = [{header: "2012", title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: '/assets/images/programs/past/2012_1.jpg'}]
-            items2 = [{header: "2012", title: 'Title something', descriptions: 'Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis', img: 'http://placehold.it/600x300?text=Logo'}]
-          +commondGrid(items1, 2012, true)
-          +commondGrid(items1, null, false)
-    .row
-      .col-xs-12
-        .past-programs__continue
-          h3.past-programs__continue__title {{App.pastPrograms.continue}}
+        .grid-container(id="{{history.year}}")
+          .container-fluid
+            .grid-container__item(ng-repeat="event in history.events")
+              div(ng-switch="event.type")
+                div(ng-switch-when="2")
+                  .row.two-grid__row
+                    .two-grid__cell.two-grid__cell--text.col-xs-12.col-sm-6.col-md-6.col-lg-6.no-gutter
+                      h3(ng-if="event.isFirst").two-grid__cell-header {{history.year}}
+                      p.two-grid__cell-body
+                        .two-grid__cell-body__text {{event.description}}
+                    .two-grid__cell.two-grid__cell--image.two-grid__cell--image-right.col-xs-12.col-sm-6.col-md-6.col-lg-6.no-gutter
+                      img(alt="" src="{{event.image}}")
+                div(ng-switch-when="3")
+                  .row.three-grid__row
+                    .three-grid__item.col-xs-4.no-gutter(ng-repeat="item in event.items")
+                      .three-grid__item__img
+                        img(src="{{item.image}}" alt="")
+                      .three-grid__item__description {{item.description}}
+                div(ng-switch-when="1")
+                  .row.one-grid__row
+                    .one-grid__item.col-xs-12.no-gutter
+                      h3(ng-if="event.isFirst").one-grid__item__header {{history.year}}
+                      .one-grid__item__description {{event.description}}
 footer
