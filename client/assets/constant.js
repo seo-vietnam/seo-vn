@@ -19,7 +19,7 @@ var App = {
     login: "Log in to your application",
     item1 : {name: "Program", link: "/programs"},
     item2 : {name: "Apply", link: "/apply"},
-    item3 : {name: "About", link: "/about"},
+    item3 : {name: "About", link: "/about-us"},
     item4 : {name: "Partners", link: "/partners"},
     item5 : {name: "donate", link: "/donate"}
   },
@@ -346,7 +346,6 @@ var App = {
     content: {
       title: "Join Us",
       image: "/assets/images/programs/momentum/Momentum.jpg",
-      firstLine: "Text block about momentum program.",
       lines: ["Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te. Et priimpedit rationibus, modo commune qualis-que usu ei, nam eu habeo expetenda. Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te. Et priimpedit rationibus, modo commune qualis-que usu ei, nam eu habeo expetenda."],
       partner: {
         title: "Partner",
@@ -530,28 +529,25 @@ var App = {
         events: [
           {
             description: "In summer 2010, SEO-IIV hosted a total of 13 summer seminar series, 9 training sessions and workshops, with one opening dinner accompanied by the welcoming speech by the founders of SEO, and provided a mentoring program.",
-            type: "1",
+            type: 1,
             isFirst: true
           },
           {
             items: [
               {
                 image: "http://placehold.it/400x500?text=Image",
-                title: "Title something",
                 description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis.",
               },
               {
                 image: "http://placehold.it/400x500?text=Image",
-                title: "Title something",
                 description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis.",
               },
               {
                 image: "http://placehold.it/400x500?text=Image",
-                title: "Title something",
                 description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis.",
               }
             ],
-            type: "3"
+            type: 3
           }
         ]
       },
@@ -560,10 +556,91 @@ var App = {
         events: [
           {
             description: "The summer program of 2009 provided opportunities to connect 5 interns from a diversity of backgrounds with Vietnamese leading financial firms (Horizon Capital and IDG Ventures Vietnam). The interns were placed in different divisions of IIV’s partner companies, receiving on-the-job training and mentorship from a firm supervisor. This ideology of giving the interns first hand experience during their internship enhanced IIV’s quality as an internship provider in Vietnam, and also a close model to professional internships in New York or London. In addition, an emphasis on the “giving back to society” spirit was also put forward. Every intern was required to work on a community project of their own, contributing through volunteerism and leadership.",
-            type: "1",
+            type: 1,
             isFirst: true
           }
         ]
+      }
+    ]
+  },
+
+  aboutUs : {
+    title: "How We Started",
+    chairman: {
+      image: "http://placehold.it/500x600?text=Image",
+      text: "Tony Ngo, Chairman and Founder"
+    },
+    stories: [
+      "Since 2007 when he first met with management teams in Vietnam as an investor, Tony Ngo has observed the need and potential for talented young leaders to shape the trajectory of Vietnam's development. In 2009, Tony founded 'Interns in Vietnam' (IIV) to develop leaders who will not only succeed on an individual level, but will also make a difference by driving business, economic, and social changes in their communities.",
+      "IIV is predicated on cultivating professional development and leadership skills, and IIV’s first initiative achieves this through a summer internship program that connects high-achieving students with opportunities in Vietnam. The initial program successfully placed five students at Horizon Capital and IDG Ventures Vietnam in the summer of 2009.",
+      "In 2010, IIV partnered with Sponsors for Educational Opportunity (SEO), a U.S based non-profit organization that provides educational and career programs to young people from underserved communities, to form SEO-Vietnam. In its first year, SEO-Vietnam received over 180 applications and successfully placed 13 students in 7 firms at several prestigious financial services, retail, and non-profit organizations in Vietnam. The program also expanded to include rigorous training, mentorship and a Summer Seminar Series that featured executives and leaders in business, government and non-profit organizations."
+    ],
+    vision: "SEO-Vietnam is a non-profit organization founded in 2009 with a vision to create a powerful network of support and develop leadership capacity among professionals who will make a difference in Vietnam. We aspire to be a driving force that will propel young, bright-minded and ambitious Vietnamese forward for a successful future of Vietnam by giving them guidance and opportunities to grow. We aim to inspire them to cultivate intellect, character, integrity and a sense of social responsibility for the progressive and sustainable development of the nation.",
+    mission: [
+        "Connecting high-achieving students and young professionals with structured opportunities to intern and work for leading businesses and non-profit organizations in Vietnam",
+        "Producing outstanding young professionals through rigorous training, mentoring and speaker events",
+        "Inspiring a sense of social responsibility"
+    ],
+    values: [
+      {
+        title: "Excellence and continuous self-improvement",
+        text: "We are devoted to training high-caliber candidates with ambitions, lifelong learning drive and great potentials. We encourage both individual initiative, ability and creativity and teamwork."
+      },
+      {
+        title: "Leadership",
+        text: "We promote a dedication to serving a greater good."
+      },
+      {
+        title: "Integrity",
+        text: "We uphold the principle of offering opportunity based on merit, and treat every participant, partner, sponsor equally in every action and decision."
+      },
+      {
+        title: "Diversity and Inclusion",
+        text: "We foster an environment that encourages multicultural perspectives and conversations at all levels within our organization"
+      }
+    ],
+    directors: [
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
+      }
+    ],
+    members: [
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=People",
+        name: "Name",
+        description: "Description"
       }
     ]
   }

@@ -1,0 +1,125 @@
+.about-us {
+  padding-top: 110px;
+  background-color: $very-light-gray;
+  font-size: 16px;
+  line-height: 1.5;
+
+  &__vertical-line {
+    clear: both;
+    border-bottom: 1px solid;
+  }
+
+  .container {
+    background-color: white;
+  }
+  &__title {
+    padding: 20px 0 30px 0;
+    text-align: center;
+    color: $green;
+    font-size: 54px;
+  }
+
+  &__story {
+    padding-bottom: 50px;
+    &__image {
+      float: left;
+      width: 40%;
+      img {
+        width: 95%;
+        height: auto;
+      }
+      p {
+        padding: 10px 0;
+        font-size: 14px;
+      }
+    }
+    &__text {
+      padding: 0 15px;
+      //float: left;
+      //width: 60%;
+      &__line {
+        p {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__vision-mission {
+    padding: 50px 0;
+    &__item {
+      &__title {
+        text-align: center;
+        color: $green;
+        padding-bottom: 10px;
+      }
+      &__line {
+
+      }
+    }
+  }
+
+  &__values {
+    padding: 50px 0;
+    &__title {
+      text-align: center;
+      color: $green;
+    }
+
+    &__item {
+      padding-bottom: 25px;
+      &__title {
+        color: $green;
+        margin: 0;
+      }
+
+      &__content {
+
+      }
+    }
+  }
+
+  &__our-people {
+    padding: 50px 0;
+    &__title {
+      text-align: center;
+      color: $green;
+      padding-bottom: 10px;
+    }
+
+    &--container {
+      padding-bottom: 50px;
+      overflow: auto;
+    }
+
+    &__item {
+      &__title {
+        color: $green;
+        padding-bottom: 10px;
+      }
+
+      &__img {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin: 0 auto;
+        overflow: hidden;
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: auto;        }
+      }
+
+      &__name {
+
+      }
+
+      &__description {
+
+      }
+    }
+  }
+}

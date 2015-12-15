@@ -68,6 +68,15 @@ angular.module('alBookingApp', [
                     }
                 }
             })
+            .state('aboutUs', {
+                url: '/about-us',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/about-us/about-us.html',
+                        controller: 'AboutUsController'
+                    }
+                }
+            })
         ;
     })
     .controller('AppController', function ($rootScope, $scope) {
