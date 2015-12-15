@@ -35,12 +35,10 @@
       }
 
       &__line-1 {
-        p {
-          text-transform: uppercase;
-        }
         a {
           text-decoration: none;
           color: black;
+          text-transform: uppercase;
           &:hover {
             color: $green;
           }

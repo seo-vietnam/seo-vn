@@ -37,6 +37,6 @@ header
               .programs__main__components__item__content__image.col-xs-6(ng-repeat="img in item.images track by $index")
                 img(src="{{img}}" alt="")
     .programs__main__speech
-      .programs__main__speech__text "{{App.program.content.speech.text}}"
+      h6.programs__main__speech__text "{{App.program.content.speech.text}}"
       .programs__main__speech__owner {{App.program.content.speech.owner}}
 footer

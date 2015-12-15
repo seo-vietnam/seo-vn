@@ -46,27 +46,24 @@
 
         &__tag-line {
             &__title {
-                font-size:34px;
-                font-family: $font-medium;
-                font-weight: bold;
                 text-transform:uppercase;
             }
 
             &__description {
-                font-size:21px;
+                font-family: $font-light;
+                font-size:18px;
                 font-style: italic;
-                line-height: 1.4;
             }
 
             &__link {
                 margin-top: 100px;
                 a {
                     position:absolute;
-                    font-size:24px;
-                    font-family: $font-medium;
-                    font-weight: bold;
                     text-decoration: underline;
-                    color: white;
+                    color: $light-gray;
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }

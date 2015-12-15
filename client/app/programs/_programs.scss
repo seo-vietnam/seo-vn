@@ -9,26 +9,11 @@
     padding: 20px 0 30px 0;
     text-align: center;
     color: $green;
-    font-size: 54px;
+    font-size: $page-title-size;
   }
 
   &__main {
     margin: 0;
-    &__intro {
-      font-size: 18px;
-      font-family: $font-bold;
-      border-bottom: 1px solid;
-      &__line {
-        padding-bottom: 10px;
-        &--key {
-          display: inline;
-          color: $green;
-        }
-        &--text {
-          display: inline;
-        }
-      }
-    }
 
     &__block {
       padding-bottom: 20px;
@@ -36,9 +21,6 @@
         text-align: center;
         color: $green;
         padding-bottom: 10px;
-        &--bold {
-          font-weight: bold;
-        }
       }
       &__img{
         padding-bottom: 10px;
@@ -111,7 +93,6 @@
       color: $green;
       &__text {
         font-size: 18px;
-        font-weight: bold;
       }
       &__owner {
         font-size: 18px;

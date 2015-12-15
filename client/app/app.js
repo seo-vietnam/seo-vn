@@ -81,8 +81,10 @@ angular.module('alBookingApp', [
     })
     .controller('AppController', function ($rootScope, $scope) {
         $rootScope.App = App;
+        $scope.pageTitle = App.pageTitle.home;
 
         $scope.isActive = function(menu) {
             return $scope.activeMenu == menu;
         };
-    });
+    })
+;

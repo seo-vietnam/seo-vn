@@ -2,16 +2,9 @@
 (function () {
 
     function MainController($scope, $http) {
-        var self = this;
-        this.awesomeThings = [];
-
-        $http.get('/api/things').then(function (response) {
-            self.awesomeThings = response.data;
-        });
-
+        $scope.$parent.pageTitle = App.pageTitle.home;
     }
 
     angular.module('alBookingApp')
         .controller('MainController', MainController);
-
 })();

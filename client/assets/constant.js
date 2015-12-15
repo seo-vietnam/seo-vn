@@ -1,5 +1,15 @@
 var App = {
 
+  pageTitle: {
+    home: "Home",
+    apply: "Apply",
+    program: "Program",
+    momentum: "Momentum Program",
+    pastProgram: "Past Programs",
+    about: "About Us",
+    partner: "Partners"
+  },
+
   button: {
     learnMore : "Learn More",
     detail : "Detail",
@@ -292,7 +302,8 @@ var App = {
           {
             title: "Internship Placement",
             introduction: "Text block about internship placement.",
-            lines: ["No nulla debet percipitur vim, cu sed case instructor. Nominavi taci-mastes ut vel. Nibh nemore dicunt ei qui. ex soleat dissentiet mei.", "Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te."]
+            lines: ["Since 2009, our annual career program has connected hundreds of brilliant students with top-notch internships in Ho Chi Minh City and Hanoi."],
+            images: ["/assets/images/programs/Internship-Placement_1.jpg", "/assets/images/programs/Internship-Placement_2.jpg"]
           },
           {
             title: "Training Program",
@@ -567,7 +578,7 @@ var App = {
   aboutUs : {
     title: "How We Started",
     chairman: {
-      image: "http://placehold.it/500x600?text=Image",
+      image: "/assets/images/about-us/Tony.jpg",
       text: "Tony Ngo, Chairman and Founder"
     },
     stories: [

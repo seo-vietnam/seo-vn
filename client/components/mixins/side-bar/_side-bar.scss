@@ -17,13 +17,13 @@
     }
     &__title {
       text-transform: uppercase;
-      font-family: $font-bold;
+      font-family: $font-ls;
+      font-size: 17px;
+      line-height: 24px;
     }
 
     &__branch {
-      font-family: $font-medium;
-      font-weight: bold;
-      line-height: 1.7;
+      font-family: $font-ls;
 
       &--container {
         display: none;

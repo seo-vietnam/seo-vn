@@ -1,7 +1,8 @@
 'use strict';
 (function () {
     angular.module('alBookingApp')
-        .controller('ApplyController', function ($scope, $http) {
+        .controller('ApplyController', function ($scope) {
+            $scope.$parent.pageTitle = App.pageTitle.apply;
             $scope.$parent.activeMenu =  App.pageMenu.item2.name;
             var option = {
                 items: 1,

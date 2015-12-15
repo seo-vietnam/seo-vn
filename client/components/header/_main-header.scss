@@ -17,13 +17,11 @@
   }
 
   a {
-    color: white;
+    color: $light-gray;
     text-decoration: none;
     display: block;
-    font-family: $font-bold;
-    font-size: 16px;
     &:hover,:visited {
-      color: $green;
+      color: white;
     }
   }
 
