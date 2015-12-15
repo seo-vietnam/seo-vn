@@ -4,7 +4,8 @@ var App = {
     learnMore : "Learn More",
     detail : "Detail",
     search: "Search",
-    startMyApplication: "Start My Application"
+    startMyApplication: "Start My Application",
+    beAMomentumPartner: "Be a Momentum Partner"
   },
 
   homeMenu: {
@@ -68,7 +69,7 @@ var App = {
         {name: "Round 1", time: "Time and Date"},
         {name: "Round 2", time: "Time and Date"},
         {name: "Round 3", time: "Time and Date"},
-        {name: "Round Offers", time: "Time and Date"},
+        {name: "Round Offers", time: "Time and Date"}
       ],
       paragraph: {
         title: "Block of text. Testimony? More details and descriptions?",
@@ -261,7 +262,7 @@ var App = {
         title: "Program Overview",
         link: "/programs",
         active: true,
-        items: [{title: "Career program", active: true, link: "/programs"}, {title: "Momentum Program", active: false, link: "#"}]
+        items: [{title: "Career program", active: true, link: "/programs"}, {title: "Momentum Program", active: false, link: "/momentum-program"}]
       }, {
         title: "Apply",
         link: "/apply",
@@ -280,27 +281,94 @@ var App = {
       }
     ],
     content: {
-      introduction: {
-        title: "Join us, because we...",
-        lines: [
-          {keyword: "Connect", text: "high-achieving students with opportuni-ties at leading businesses and NPOs in Vietnam."},
-          {keyword: "Develop", text: "outstanding young professionals through a series of rigorous training, networking events, and mentoring opportunities."},
-          {keyword: "Inspire", text: "a sense of social responsibilities through communities projects."}
-        ]
-      },
       globalPresence: {
-        title: "Our Global Presence",
-        image: "/assets/images/programs/map.png",
-        description: ["Optional text block about global presence.", "No nulla debet percipitur vim, cu sed case instructior. Nominavi tacimates ut vel. Nibh nemore dicunt ei qui, ex enim soleat dissentiet mei."]
+        image: "/assets/images/programs/map2.png",
+        description: ["Optional text block about global presence.", "No nulla debet percipitur vim, cu sed case instructior. Nominavi tacimates ut vel. Nibh nemore dicunt ei qui, ex enim soleat dissentiet mei."],
+        statisticImage: "http://placehold.it/992x712?text=Chart"
       },
-      statistic: {
-        title: "2015 Internship Statistics",
-        image: "http://placehold.it/992x512?text=Image",
-        description: ["Optional text block about internship.", "No nulla debet percipitur vim, cu sed case instructior. Nominavi tacimates ut vel. Nibh nemore dicunt ei qui, ex enim soleat dissentiet mei."]
+      components: {
+        title: "Program Components",
+        items: [
+          {
+            title: "Internship Placement",
+            introduction: "Text block about internship placement.",
+            lines: ["No nulla debet percipitur vim, cu sed case instructor. Nominavi taci-mastes ut vel. Nibh nemore dicunt ei qui. ex soleat dissentiet mei.", "Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te."]
+          },
+          {
+            title: "Training Program",
+            lines: ["On top of the internships, students attend a rigorous training program designed to build up a string skills set critical to career success."],
+            images: ["/assets/images/programs/Training-Program_1.jpg", "/assets/images/programs/Training-Program_2.jpg"]
+          },
+          {
+            title: "Careers Talk",
+            lines: ["SEO-V Careers Program also includes bi-weekly on-site visits and networking events at partner companies."],
+            images: ["/assets/images/programs/Speaker-Series_1.jpg", "/assets/images/programs/Speaker-Series_2.jpg"]
+          },
+          {
+            title: "Community Projects",
+            lines: ["Students give back to the community by completing a 8-week project with a local NPO."],
+            images: ["/assets/images/programs/Community-Service_1.jpg", "/assets/images/programs/Community_Service-2.jpg"]
+          }
+        ]
       },
       speech: {
         text: "It does not matter where you start, it matters how fast you grow.",
         owner: "Tony Ngo, Chairman and Founder"
+      }
+    }
+  },
+
+  momentumProgram : {
+    title : "SEO-VN Summer Program",
+    sideBar : [
+      {
+        title: "Program Overview",
+        link: "/programs",
+        active: true,
+        items: [{title: "Career program", active: false, link: "/programs"}, {title: "Momentum Program", active: true, link: "/momentum-program"}]
+      }, {
+        title: "Apply",
+        link: "/apply",
+        active: false,
+        items: []
+      }, {
+        title: "Be a partner",
+        link: "/partners",
+        active: false,
+        items: []
+      }, {
+        title: "Past programs",
+        link: "/past-programs",
+        active: false,
+        items: []
+      }
+    ],
+    content: {
+      title: "Join Us",
+      image: "/assets/images/programs/momentum/Momentum.jpg",
+      firstLine: "Text block about momentum program.",
+      lines: ["Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te. Et priimpedit rationibus, modo commune qualis-que usu ei, nam eu habeo expetenda. Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te. Et priimpedit rationibus, modo commune qualis-que usu ei, nam eu habeo expetenda."],
+      partner: {
+        title: "Partner",
+        image: "/assets/images/programs/momentum/Partner_SEO-V.png",
+        link: "#"
+      },
+      projects: {
+        title: "Projects",
+        logos: [
+          {
+            image: "/assets/images/programs/momentum/Project_1_Healthcare.jpg",
+            link: "#"
+          },
+          {
+            image: "/assets/images/programs/momentum/Project_2_Environment.jpg",
+            link: "#"
+          },
+          {
+            image: "/assets/images/programs/momentum/Project_3_Education.jpg",
+            link: "#"
+          }
+        ]
       }
     }
   },

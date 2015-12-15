@@ -1,0 +1,43 @@
+header
+.momentum-program
+  .container
+    .row
+      h1.momentum-program__title {{App.momentumProgram.title}}
+    .row
+      aside.col-xs-3
+        .row.side-bar
+          .side-bar__item(ng-repeat="item in menuFilters")
+            a(href="{{item.link}}")
+              h4(ng-class="{'side-bar__item--active': item.active}").side-bar__item__title {{item.title}}
+            .side-bar__item__branch--container-display
+              .side-bar__item__branch(ng-repeat="subItem in item.items")
+                a(href="{{subItem.link}}")
+                 p(ng-class="{'side-bar__item--active': subItem.active}") {{subItem.title}}
+      main.col-xs-9
+        .row.momentum-program__main
+          .momentum-program__main__img
+            img(src="{{App.momentumProgram.content.image}}" alt="")
+          h2.momentum-program__main__title {{App.momentumProgram.content.title}}
+          .momentum-program__main__line--container
+            .momentum-program__main__line {{App.momentumProgram.content.firstLine}}
+            .momentum-program__main__line(ng-repeat="line in App.momentumProgram.content.lines track by $index")
+              |{{line}}
+          .momentum-program__main__branch
+            .row
+              .momentum-program__main__branch--partner.col-xs-3
+                .momentum-program__main__branch__title {{App.momentumProgram.content.partner.title}}
+                .momentum-program__main__branch__logo
+                  a(href="{{App.momentumProgram.content.partner.link}}")
+                    img.momentum-program__main__branch__logo__img.momentum-program__main__branch__logo__img--full-width(src="{{App.momentumProgram.content.partner.image}}" alt="")
+              .momentum-program__main__branch--projects.col-xs-9
+                .momentum-program__main__branch__title {{App.momentumProgram.content.projects.title}}
+                .row
+                  .col-xs-4(ng-repeat="logo in App.momentumProgram.content.projects.logos track by $index")
+                    .momentum-program__main__branch__logo
+                      a(href="{{logo.link}}")
+                        img.momentum-program__main__branch__logo__img(src="{{logo.image}}" alt="")
+          .momentum-program__main__link
+            a(href="/partners")
+             |{{App.button.beAMomentumPartner}}&nbsp;&nbsp;
+             i.fa.fa-long-arrow-right
+footer

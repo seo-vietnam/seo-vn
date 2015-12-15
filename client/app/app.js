@@ -50,6 +50,15 @@ angular.module('alBookingApp', [
                     }
                 }
             })
+            .state('momentumProgram', {
+                url: '/momentum-program',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/momentum-program/momentum-program.html',
+                        controller: 'MomentumProgramController'
+                    }
+                }
+            })
             .state('pastPrograms', {
                 url: '/past-programs',
                 views: {

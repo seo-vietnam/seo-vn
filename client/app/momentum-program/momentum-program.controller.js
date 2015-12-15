@@ -1,8 +1,8 @@
 'use strict';
 (function () {
     angular.module('alBookingApp')
-        .controller('ProgramsController', function ($scope, $http) {
+        .controller('MomentumProgramController', function ($scope, $http) {
             $scope.$parent.activeMenu =  App.pageMenu.item1.name;
-            $scope.menuFilters = App.program.sideBar;
+            $scope.menuFilters = App.momentumProgram.sideBar;
     });
 })();

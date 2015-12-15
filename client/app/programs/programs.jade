@@ -15,25 +15,28 @@ header
                  p(ng-class="{'side-bar__item--active': subItem.active}") {{subItem.title}}
       main.col-xs-9
         .row.programs__main
-          .programs__main__intro
-            .programs__main__intro__line
-              .programs__main__intro__line--text {{App.program.content.introduction.title}}
-            .programs__main__intro__line(ng-repeat="line in intros")
-              .programs__main__intro__line--key {{line.keyword}}
-              |&nbsp
-              .programs__main__intro__line--text {{line.text}}
           .programs__main__block
-            h2.programs__main__block__title.programs__main__block__title--bold {{App.program.content.globalPresence.title}}
             img.programs__main__block__img(src="{{App.program.content.globalPresence.image}}" alt="")
-            .programs__main__block__line(ng-repeat="line in App.program.content.globalPresence.description")
-              |{{line}}
-          .programs__main__block
-            h2.programs__main__block__title {{App.program.content.statistic.title}}
-            img.programs__main__block__img(src="{{App.program.content.statistic.image}}" alt="")
-            .programs__main__block__line(ng-repeat="line in App.program.content.statistic.description")
-              | {{line}}
-          .programs__main__speech
-            .programs__main__speech__text "{{App.program.content.speech.text}}"
-            .programs__main__speech__owner {{App.program.content.speech.owner}}
-
+            .programs__main__block--container
+              .programs__main__block__left.col-xs-5
+                .programs__main__block__line(ng-repeat="line in App.program.content.globalPresence.description")
+                  | {{line}}
+              .programs__main__block__right.col-xs-7
+                img.programs__main__block__img(src="{{App.program.content.globalPresence.statisticImage}}" alt="")
+    section.programs__main__components
+      h2.programs__main__components__head-title {{App.program.content.components.title}}
+      .programs__main__components__item(ng-repeat="item in App.program.content.components.items")
+        .row
+          h3.programs__main__components__item__title.col-xs-5 {{item.title}}
+          .programs__main__components__item__content.col-xs-7
+            .programs__main__components__item__content__first-line
+              p {{item.introduction}}
+            .programs__main__components__item__content__line(ng-repeat="line in item.lines track by $index")
+              p {{line}}
+            .row
+              .programs__main__components__item__content__image.col-xs-6(ng-repeat="img in item.images track by $index")
+                img(src="{{img}}" alt="")
+    .programs__main__speech
+      .programs__main__speech__text "{{App.program.content.speech.text}}"
+      .programs__main__speech__owner {{App.program.content.speech.owner}}
 footer
