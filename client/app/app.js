@@ -72,10 +72,41 @@ angular.module('alBookingApp', [
                 url: '/about-us',
                 views: {
                     "main" : {
-                        templateUrl: 'app/about-us/about-us.html',
+                        templateUrl: 'app/about-us/about-us-story.html',
                         controller: 'AboutUsController'
                     }
-                }
+                },
+                params: {active: "story"}
+            })
+            .state('aboutUsVMV', {
+                url: '/about-us-vmv',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/about-us/about-us-vmv.html',
+                        controller: 'AboutUsController'
+                    }
+                },
+                params: {active: "vmv"}
+            })
+            .state('aboutUsPeople', {
+                url: '/about-us-people',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/about-us/about-us-people.html',
+                        controller: 'AboutUsController'
+                    }
+                },
+                params: {active: "people"}
+            })
+            .state('donate', {
+                url: '/donate',
+                views: {
+                    "main" : {
+                        templateUrl: 'app/donate/donate.html',
+                        controller: 'DonateController'
+                    }
+                },
+                params: {active: "people"}
             })
         ;
     })

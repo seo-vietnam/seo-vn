@@ -1,0 +1,18 @@
+extends _about-us.jade
+block page-body
+  .row
+    .about-us__our-people
+      .about-us__our-people--container
+        h4.about-us__our-people__item__title.col-xs-12 Board of Directors
+        .about-us__our-people__item.col-xs-3(ng-repeat="director in App.aboutUs.directors track by $index")
+          .about-us__our-people__item__img
+            img(src="{{director.image}}" alt="")
+          .about-us__our-people__item__name {{director.name}}
+          .about-us__our-people__item__description {{director.description}}
+      .about-us__our-people--container
+        h4.about-us__our-people__item__title.col-xs-12 Executive Members
+        .about-us__our-people__item.col-xs-3(ng-repeat="member in App.aboutUs.members track by $index")
+          .about-us__our-people__item__img
+            img(src="{{member.image}}" alt="")
+          .about-us__our-people__item__name {{member.name}}
+          .about-us__our-people__item__description {{member.description}}

@@ -7,7 +7,8 @@ var App = {
     momentum: "Momentum Program",
     pastProgram: "Past Programs",
     about: "About Us",
-    partner: "Partners"
+    partner: "Partners",
+    dontate: "Donate"
   },
 
   button: {
@@ -575,7 +576,25 @@ var App = {
   },
 
   aboutUs : {
-    title: "How We Started",
+    title: "Who We Are",
+    sideBar : [
+      {
+        title: "Our story",
+        link: "/about-us",
+        active: "story",
+        items: []
+      }, {
+        title: "Our vision, mission, and values",
+        link: "/about-us-vmv",
+        active: "vmv",
+        items: []
+      }, {
+        title: "Our people",
+        link: "/about-us-people",
+        active: "people",
+        items: []
+      }
+    ],
     chairman: {
       image: "/assets/images/about-us/Tony.jpg",
       text: "Tony Ngo, Chairman and Founder"
@@ -653,5 +672,13 @@ var App = {
         description: "Description"
       }
     ]
+  },
+
+  donate: {
+    title: "Deepen Our Impact",
+    description1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque sem quis enim volutpat, sed scelerisque lacus tincidunt. Etiam lorem enim, congue et efficitur posuere, volutpat vel est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut malesuada tempor quam, id pharetra tortor bibendum eu. Morbi efficitur pellentesque purus, sed varius nibh.",
+    description2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque sem quis enim volutpat, sed scelerisque lacus tincidunt. Etiam lorem enim, congue et efficitur posuere, volutpat vel est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut malesuada tempor quam, id pharetra tortor bibendum eu. Morbi efficitur pellentesque purus, sed varius nibh. Nullam libero dui, rutrum id leo quis, mattis tincidunt sem. In eleifend elit erat, a posuere lacus commodo vel. Vivamus sagittis diam metus, a faucibus lorem tincidunt nec. Nunc non blandit nulla. Mauris blandit sagittis vehicula. Phasellus dictum vestibulum imperdiet.",
+    image: "http://placehold.it/1200x300?text=Image",
+    video: "https://www.youtube.com/embed/KOO6MdLuUaU"
   }
 };

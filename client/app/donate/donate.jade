@@ -1,0 +1,14 @@
+header
+.donate
+  .container
+    .row
+      h1.donate__title {{App.donate.title}}
+    .row
+      .donate__main
+        .donate__main__paragraph {{App.donate.description1}}
+        .donate__main__image
+          img(src="{{App.donate.image}}" alt="")
+        .donate__main__paragraph {{App.donate.description2}}
+        .donate__main__video
+          iframe(src="{{videoSrc}}" frameborder="0" allowfullscreen)
+footer
