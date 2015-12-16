@@ -390,13 +390,12 @@ var App = {
       text: "Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te. Et priimpedit rationibus, modo commune qualis-que usu ei, nam eu habeo expetenda."
     },
     instruction: "Select a year, or just scroll.",
-    continue: "(... until 2009)",
     sideBar : [
       {
         title: "Program Overview",
         link: "/programs",
         active: false,
-        items: [{title: "Career program", active: false, link: "/programs"}, {title: "Momentum Program", active: false, link: "#"}]
+        items: [{title: "Career program", active: false, link: "/programs"}, {title: "Momentum Program", active: false, link: "/momentum-program"}]
       }, {
         title: "Apply",
         link: "/apply",

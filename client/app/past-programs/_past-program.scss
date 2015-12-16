@@ -1,5 +1,8 @@
 .past-programs {
-  padding-top: 110px;
+  padding-top: 100px;
+  @media (min-width: $screen-desktop) {
+    padding-top: 110px;
+  };
   background-color: $very-light-gray;
 
   .container {

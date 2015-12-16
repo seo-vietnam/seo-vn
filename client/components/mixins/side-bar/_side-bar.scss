@@ -18,13 +18,30 @@
     &__title {
       text-transform: uppercase;
       font-family: $font-ls;
-      font-size: 17px;
-      line-height: 24px;
+      font-size: 16px;
+      line-height: 18px;
+
+      @media (min-width: $screen-tablet) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      @media (min-width: $screen-desktop) {
+        font-size: 22px;
+        line-height: 24px;
+      }
     }
 
     &__branch {
       font-family: $font-ls;
+      font-size: 12px;
+      @media (min-width: $screen-tablet) {
+        font-size: 14px;
+      }
 
+      @media (min-width: $screen-desktop) {
+        font-size: 16px;
+      }
       &--container {
         display: none;
         padding-bottom: 15px;

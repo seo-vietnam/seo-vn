@@ -1,6 +1,9 @@
 .apply {
   $padding-section: 50px;
-  margin-top: 120px;
+  padding-top: 100px;
+  @media (min-width: $screen-desktop) {
+    padding-top: 110px;
+  };
   font-size: 16px;
   &__banner{
     color: white;
@@ -25,7 +28,14 @@
       padding: 30px;
       &__left {
         text-align: center;
-        padding: 0 100px;
+        padding: 0 20px;
+        @media(min-width: $screen-desktop) {
+          padding: 0 50px;
+        }
+
+        @media(min-width: $screen-laptop) {
+          padding: 0 100px;
+        }
         &--factor {
           margin-bottom: 50px;
         }
@@ -57,7 +67,15 @@
       &__right {
         text-align: center;
         font-weight: bold;
-        padding: 0 100px;
+        padding: 0 20px;
+        @media(min-width: $screen-desktop) {
+          padding: 0 50px;
+        }
+
+        @media(min-width: $screen-laptop) {
+          padding: 0 100px;
+        }
+
         &__title {
 
         }
@@ -141,8 +159,13 @@
 
     .owl-nav {
       position: absolute;
-      top: 25%;
+      top: 5%;
       width: 100%;
+
+      @media(min-width: $screen-desktop) {
+        top: 25%;
+      }
+
       a {
         text-decoration: none;
         color: white;
@@ -183,30 +206,55 @@
       }
 
       &__right {
-        min-height: 230px;
-        padding: $padding-section/2 0 0 $padding-section/2;
+        min-height: 130px;
+        padding: 0 0 0 $padding-section/4;
         position: relative;
-        font-size: 15px;
+        font-size: 14px;
+        @media(min-width: $screen-desktop) {
+          min-height: 190px;
+          font-size: 15px;
+        }
+        @media(min-width: $screen-laptop) {
+          min-height: 230px;
+          padding: $padding-section/2 0 0 $padding-section/2;
+        }
         &__text {
           text-align: center;
           font-style: italic;
           display: block; /* Fallback for non-webkit */
           display: -webkit-box;
-          -webkit-line-clamp: 7;
+          -webkit-line-clamp: 4;
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
           p {
             margin: 0;
           }
+          @media(min-width: $screen-desktop) {
+            -webkit-line-clamp: 6;
+          }
+          @media(min-width: $screen-laptop) {
+            -webkit-line-clamp: 7;
+          }
         }
         &__footer {
           position: absolute;
           bottom: 0;
-          right: $padding-section;
+          right: 0;
+          font-size: 13px;
           p {
             margin: 0;
             text-align: right;
+            display: block; /* Fallback for non-webkit */
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          @media(min-width: $screen-desktop) {
+            -webkit-line-clamp: 2;
+            font-size: 14px;
           }
         }
       }

@@ -1,8 +1,15 @@
 .about-us {
-  padding-top: 110px;
+  padding-top: 100px;
+  @media (min-width: $screen-desktop) {
+    padding-top: 110px;
+  };
   background-color: $very-light-gray;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
+
+  @media (min-width: $screen-tablet) {
+    font-size: 16px;
+  }
 
   &__vertical-line {
     clear: both;
@@ -30,7 +37,10 @@
       }
       p {
         padding: 10px 0;
-        font-size: 14px;
+        font-size: 12px;
+        @media (min-width: $screen-tablet) {
+          font-size: 14px;
+        }
       }
     }
     &__text {

@@ -6,9 +6,14 @@
   -moz-box-sizing: border-box;
   box-shadow:0 2px 2px rgba(0, 0, 0, 0.2);
   transition:all 250ms ease;
-  min-height: 100px;
-  padding: 15px;
+  min-height: 80px;
+  padding: 10px 0;
   //border-bottom: 1px solid #E5E5E5;
+
+  @media (min-width: $screen-desktop) {
+    min-height: 100px;
+    padding: 15px 0;
+  }
 
   &--fixed {
       position: absolute;
@@ -23,7 +28,11 @@
     &__logo {
       img {
         width: auto;
-        height: 80px;
+        height: 70px;
+
+        @media (min-width: $screen-desktop) {
+          height: 80px;
+        }
       }
     }
 
@@ -39,6 +48,14 @@
           text-decoration: none;
           color: black;
           text-transform: uppercase;
+          h6 {
+            font-size: 11px;
+          }
+          @media (min-width: $screen-desktop) {
+            h6 {
+              font-size: 12px;
+            }
+          }
           &:hover {
             color: $green;
           }
@@ -46,15 +63,25 @@
       }
 
       &__line-2 {
-        margin-top: 35px;
+        margin-top: 24px;
+        @media (min-width: $screen-desktop) {
+          margin-top: 35px;
+        }
         &__item{
           a {
             color: black;
             text-decoration: none;
             display: block;
-            font-size: 18px;
             font-weight: bold;
             text-transform: uppercase;
+            h5 {
+              font-size: 13px;
+            }
+            @media (min-width: $screen-desktop) {
+              h5 {
+                font-size: 14px;
+              }
+            }
             &:hover {
               color: $green;
             }
