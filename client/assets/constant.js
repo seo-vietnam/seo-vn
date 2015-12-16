@@ -46,46 +46,46 @@ var App = {
 
   home : {
     spotlight: {
-      title: "Make an impact.",
-      description: "Sponsors for Educational Opportunity Vietnam (SEO-Vietnam) provides superior educational and career programs to students to maximize their opportunities for professional success. Join us today to gain access to the most powerful career network in Vietnam.",
+      title: "Make an impact",
+      description: "Sponsors for Educational Opportunity - Vietnam (SEO-Vietnam) provides superior educational and career programs to students to maximize their opportunities for professional success",
       link: "Apply Now"
     },
     company : {
-      title: "SEO-Vietnam Mission:",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus.",
+      title: "SEO-Vietnam Mission",
+      description: "We are committed to connecting high-achieving students and young professionals with structured opportunities to intern and work for leading businesses and non-profit organizations in Vietnam",
     },
     "partner" : {
       title : "Our Partners",
-      description: "Advertise your partners and the industries you offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus. . Suspendisse at libero tincidunt, consequat lacus a, tempor tellus."
+      description: "SEO-Vietnam has successfully partnered with 35 prestigious financial services, retail, and non-profit organizations to provide the best internship experience to our students in Vietnam"
     }
   },
 
   apply: {
     title: "What To Know Before Applying",
     left: {
-      fact1: {title: "Fact 1 to know", description: "Our 2016 summer internship program’s application is Check your eligibility"},
-      fact2: {title: "Fact 2 to know", description: "Candidates must EITHER be enrolled in an undergraduate/graduate program OR graduate no sooner than December 2015"}
+      fact1: {title: "Check your eligibility", description: "Candidates must either be enrolled in an undergraduate/graduate program or graduate no sooner than December 2015"},
+      fact2: {title: "Prepare your application", description: "While all candidates are welcome to apply, their alignment with SEO-V's mission, vision and values are strongly preferred"}
     },
     right: {
       title: "Dates and Deadlines",
       events: [
-        {date: "dd/mm/yy", name:"Event", location: "Location"},
-        {date: "dd/mm/yy", name:"Event 2", location: "Location 2"}
+        {date: "January 2016", name:"VN/Asia Webinar (Time TBD)"},
+        {date: "20/12/15", name:"US/Europe Webinar (10am EST - 11am EST)"}
       ],
-      deadline: {date: "dd/mm/yy", description: "Deadline to Apply for Summer Program 2016"}
+      deadline: {date: "15/01/16", description: "Deadline to Apply for Summer Program 2016"}
     },
     process: {
       title: "Application Process Timeline",
       rounds: [
-        {name: "Round 1", time: "Time and Date"},
-        {name: "Round 2", time: "Time and Date"},
-        {name: "Round 3", time: "Time and Date"},
-        {name: "Round Offers", time: "Time and Date"}
+        {name: "Round 1", time: "15/12/2015 - 15/1/2016"},
+        {name: "Round 2", time: "15/2/2016 - 4/3/2016"},
+        {name: "Round 3", time: "16/3/2016 - 16/4/2016"},
+        {name: "Final Offers", time: "April 2016"}
       ],
       paragraph: {
-        title: "Block of text. Testimony? More details and descriptions?",
-        firstLine: "To be discussed.",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac sodales ipsum. Aenean pellentesque arcu a rhoncus eleifend. Suspendisse at libero tincidunt, consequat lacus a, tempor tellus, consequat lacus a, tempor tellus, tempor tellus."
+        title: "SEO-Vietnam Career Program",
+        firstLine: "Location: Ho Chi Minh City and Hanoi",
+        content: "SEO-Vietnam's placement process connects our students with top-notch financial services, retail, and non-profit organizations in Vietnam. Our career program also include rigorous training, mentorship and a Summer Seminar Series that featured executives and leaders in business, government and non-profit organizations"
       }
     }
   },
@@ -113,39 +113,39 @@ var App = {
             {
               name: "Horizon",
               logo: "Horizon.jpg",
-              description: "Horizon Capital Group, through its subsidiaries, provides investment banking, corporate finance advisory, securities brokerage, and asset management services. The firm was founded in 2005, and its subsidiaries include Horizon Securities Corporation, Horizon Capital Advisers, and Horizon Capital Assets Management."
+              description: "Horizon Capital Group provides investment banking, corporate finance advisory, securities brokerage, and asset management services. The firm's subsidiaries include Horizon Securities Corporation, Horizon Capital Advisers, and Horizon Capital Assets Management."
             },
             {
               name: "VinaCapital",
               logo: "VinaCapital.jpg",
-              description: "VinaCapital is a leading investment management and real estate development firm in Vietnam, with a diversified portfolio of USD1.5 billion in assets under management. VinaCapital was founded in 2003 and boasts a team of managing directors who bring extensive international finance and investment experience to the firm."
+              description: "VinaCapital is an investment management and real estate development firm in Vietnam, with a diversified portfolio of USD1.5 billion in assets under management"
             },
             {
               name: "HSC",
               logo: "HSC.jpg",
-              description: "Ho Chi Minh City Securities Corporation (HSC) is a leading and award-winning professional securities brokerage and equity firm in Vietnam. HSC delivers a comprehensive list of financial services for Private and Institutional Clients, providing professional investment advisory backed by solid, trusted research."
+              description: "Ho Chi Minh City Securities Corporation (HSC) is a professional securities brokerage and equity firm in Vietnam. HSC delivers a comprehensive list of financial services for Private and Institutional Clients and provides professional investment advisory"
             }
           ],
           normals:[
             {
               name: "VIG",
               logo: "VIG.png",
-              description: "VI (Vietnam Investments) Group is a private equity firm that focuses on high growth businesses in Vietnam. The firm makes minority and control equity investments in many industries, including financial services, logistics & transportation, media & entertainment, tourism & hospitality, housing development, manufacturing, F&B and healthcare."
+              description: "VI (Vietnam Investments) Group is a private equity firm that focuses on high growth businesses in Vietnam"
             },
             {
               name: "Indochina Capital",
               logo: "Indochina_Capital.jpg",
-              description: "Indochina Capital:Founded in 1999, Indochina Capital is one of Vietnam’s leading financial services and investment firms active in asset management, financial and strategic advisory businesses. Indochina Capital manages several funds, including three private, close-ended real estate funds, as well as a series of managed accounts."
+              description: "Founded in 1999, Indochina Capital is one of Vietnam’s leading financial services and investment firms active in asset management"
             },
             {
               name: "ACB",
               logo: "ACB.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "Asia Commercial Bank is the largest private bank in Vietnam by assets. Its branch network system totalled nearly 9000 employees offering a variety of services to clients"
             },
             {
               name: "SSI",
               logo: "SSI.jpg",
-              description: "Saigon Securities Inc. is a leading and reputable financial corporation in Vietnamese market. With a sound financial potential, a large and professional employees of the company, SSI always provides to all its customers the outstanding level of products and services and maximizing shareholders' interest. SSI has an extensive branch network in Vietnam at major cities such as Hanoi, Ho Chi Minh City, Nha Trang, Vung Tau."
+              description: "Saigon Securities Inc. is a leading and reputable financial corporation in Vietnamese market. SSI has an extensive branch network in Vietnam at major cities such as Hanoi, Ho Chi Minh City, Nha Trang, Vung Tau"
             }
           ]
         }
@@ -158,27 +158,27 @@ var App = {
             {
               name: "M-Service",
               logo: "M_Service.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "M_Service provides financial service under the brand name of MoMo. MoMo provides new channels for customers, who have a mobile phone, to access traditional retail financial services via an extensive distribution network of mobile operators"
             },
             {
               name: "Zalora",
               logo: "Zalora_Vietnam.jpg",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "ZALORA is an e-commerce platform and website that provides fashion and footwear products. Users can view images and purchase their desired fashion product online while receiving fashion tips and advice from the site"
             },
             {
               name: "Lazada",
               logo: "Lazada_VN.png",
-              description: "Lazada is part of Lazada Group - a privately owned e-commerce company headquartered in Sngapore that was found by Rocket Internet in 2011 with the goal of being “the Amazon.com of Southeast Asia.” Lazada’s websites started out three years ago as inventory-based direct retailers and operate sites in Indonesia, Malaysia, the Philippines, Singapore, Thailand and Vietnam."
+              description: "Lazada is part of Lazada Group - a privately owned e-commerce company headquartered in Sngapore that was found by Rocket Internet in 2011 with the goal of being “the Amazon.com of Southeast Asia”"
             },
             {
               name: "iVivu",
               logo: "ivivu.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: ":iVivu is a joint venture that offers a hotel management system for smart hotels in Australia. Catering to a customer base in Southeast Asian countries such as Vietnam, IVivu enables travelers to reserve social workshops, hotels, and medical facilities online"
             },
             {
               name: "Tiki",
               logo: "Tiki_VN.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "Tiki.vn is an e-commerce startup in Vietnam which offers customer service 7 days a week, free nationwide delivery, a wide range of 35,000 products ranging from books in both Vietnamese and English, e-book devices, gifts, stationary, fashion apparel, and accessories"
             }
           ]
         }
@@ -189,24 +189,24 @@ var App = {
             {
               name: "Vietnam Esports",
               logo: "VN_Esports.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "Vietnam Esports, formerly known as Garena Vietnam, was founded in 2009 and has been developing very fast in e-Sports & internet industry. Its featured product include Garena Plus, Gcafe, League of Legends, Fifa Online 3, etc."
             }],
           silvers: [],
           normals:[
             {
               name: "VNG",
               logo: "VNG.jpg",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: 'VNG motto is to "make the Internet change Vietnamese lives." It believes in the power of the Internet and sees it as its mission to bring Internet users meaningful experiences'
             },
             {
               name: "XLE",
               logo: "XLE_Group.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "XLE seeks to become the central figure in transforming the sports’ eco-system in Vietnam. Besides making sports a great entertainment experience and a sustainable business; we also focus on developing youth and inspiring millions of sports fans in Vietnam"
             },
             {
               name: "YanTV",
               logo: "YAN.jpg",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "YMG and its subsidiaries is a entertainment multi-media corporate in Vietnam focusing on developing synthetic forms of entertainment for the youth, being integrated in almost every major communication platforms including TV, digital, event and production"
             }]
         }
       }, {
@@ -216,13 +216,13 @@ var App = {
             {
               name: "Vinataba-Phillip Morris",
               logo: "PM-Vinataba.jpg",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "Philip Morris International Inc. (PMI) is the leading international tobacco company, with six of the world’s top 15 international brands, including Marlboro, the number one cigarette brand worldwide"
             }],
           silvers: [
             {
-              name: "Kinh Do (KDC)",
+              name: "Kido Group",
               logo: "Kinh_Do.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "is a business group of Vietnam with an emphasis on food production, including baked goods, confections, snacks and soft drinks. The corporate group also includes companies in the fields of financial services, real estate and a retail bakery chain."
             }],
           normals:[]
         }
@@ -235,12 +235,12 @@ var App = {
             {
               name: "San Art",
               logo: "San_Art.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "Sàn Art is an artist initiated, non-profit contemporary art organization committed to the exchange and excavation of cultural knowledge within an interdisciplinary community"
             },
             {
               name: "LIN",
               logo: "LIN.png",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "The LIN Center for Community Development (LIN) provides support services to local NPOs, skilled volunteers and donors who are committed to building strong communities"
             }
           ]
         }
@@ -252,12 +252,12 @@ var App = {
             {
               name: "Everest Education",
               logo: "E2.gif",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "Founded by Harvard and Stanford graduates, E2 prepares students mentally and academically for rigors of an international education in E2's small classes, camps, and VIP tutoring"
             },
             {
               name: "Yola",
               logo: "Yola.jpg",
-              description: "Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum Lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum dolorit amet lorem ipsum"
+              description: "As a premier provider of educational services in Vietnam, YOLA provides a wide range of educational programs and products, including test preparation courses,English language, soft-skill training, after-school tutoring, summer camps, and development of educational content"
             }
           ],
           normals:[]
@@ -303,7 +303,7 @@ var App = {
           {
             title: "Internship Placement",
             introduction: "Text block about internship placement.",
-            lines: ["Since 2009, our annual career program has connected hundreds of brilliant students with top-notch internships in Ho Chi Minh City and Hanoi."],
+            lines: ["No nulla debet percipitur vim, cu sed case instructor. Nominavi taci-mastes ut vel. Nibh nemore dicunt ei qui. ex soleat dissentiet mei.", "Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te."],
             images: ["/assets/images/programs/Internship-Placement_1.jpg", "/assets/images/programs/Internship-Placement_2.jpg"]
           },
           {

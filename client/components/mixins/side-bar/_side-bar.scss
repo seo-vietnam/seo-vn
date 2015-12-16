@@ -12,8 +12,12 @@
 
   &__item {
     border-top: 2px solid black;
-    h3 {
+    h4 {
       margin-top: 15px;
+      font-family: $font-ls;
+    }
+    h1 {
+      font-family: $font-ls;
     }
     &__title {
       text-transform: uppercase;
