@@ -29,7 +29,7 @@ header
         .row
           h3.programs__main__components__item__title.col-xs-5 {{item.title}}
           .programs__main__components__item__content.col-xs-7
-            .programs__main__components__item__content__first-line
+            .programs__main__components__item__content__first-line(ng-show="item.introduction")
               p {{item.introduction}}
             .programs__main__components__item__content__line(ng-repeat="line in item.lines track by $index")
               p {{line}}

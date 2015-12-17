@@ -81,19 +81,8 @@
 
 			img {
 			  width: 100%;
-			  //height: 512px;
+			  height: auto;
 			  transition: all .3s ease-in-out;
-			  @include respond-to-min($screen-desktop) {
-				width: auto;
-				height: 100%;
-				position: absolute;
-				left:0;
-			  }
-			  @include respond-to-min($screen-laptop) {
-				width: 100%;
-				height: auto;
-				position: static;
-			  }
 			}
 			&:hover {
 			  img {

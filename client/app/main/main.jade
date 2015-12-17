@@ -2,19 +2,16 @@ main-header
 include ./spotlight.jade
 section.main-body
   .home-page
-    .container
-        .row.home-page__content
+        .home-page__content
             .home-page__content__company-mission
               .home-page__content__company-mission__content
                 h3.home-page__content__company-mission__content__title {{App.home.company.title}}
                 .home-page__content__company-mission__content__description {{App.home.company.description}}
-                .btn.home-page__content__company-mission__content__link {{App.button.learnMore}}
+                a(href="/programs")
+                  .btn.home-page__content__company-mission__content__link {{App.button.learnMore}}
 
             .home-page__content__partners
-              h3.home-page__content__partners__title
-                .home-page__content__partners__title--bracket {
-                .home-page__content__partners__title--text {{App.home.partner.title}}
-                .home-page__content__partners__title--bracket }
+              h3.home-page__content__partners__title {{App.home.partner.title}}
               .row.home-page__content__partners--first
                 .home-page__content__partners__details.col-xs-8
                   .home-page__content__partners__details__text {{App.home.partner.description}}
