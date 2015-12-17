@@ -3,7 +3,7 @@ var App = {
   pageTitle: {
     home: "Home",
     apply: "Apply",
-    program: "Program",
+    program: "Programs",
     momentum: "Momentum Program",
     pastProgram: "Past Programs",
     about: "About Us",
@@ -28,11 +28,11 @@ var App = {
 
   pageMenu: {
     login: "Log in to your application",
-    item1 : {name: "Program", link: "/programs"},
+    item1 : {name: "Programs", link: "/programs"},
     item2 : {name: "Apply", link: "/apply"},
     item3 : {name: "About", link: "/about-us"},
     item4 : {name: "Partners", link: "/partners"},
-    item5 : {name: "donate", link: "/donate"}
+    item5 : {name: "Donate", link: "/donate"}
   },
 
   footer: {
@@ -52,11 +52,13 @@ var App = {
     },
     company : {
       title: "SEO-Vietnam Mission",
-      description: "We are committed to connecting high-achieving students and young professionals with structured opportunities to intern and work for leading businesses and non-profit organizations in Vietnam",
+      description: "We are committed to connecting high-achieving students and young professionals with structured opportunities to intern and work for leading businesses and non-profit organizations in Vietnam"
     },
     "partner" : {
       title : "Our Partners",
-      description: "SEO-Vietnam has successfully partnered with 35 prestigious financial services, retail, and non-profit organizations to provide the best internship experience to our students in Vietnam"
+      description: "SEO-Vietnam has successfully partnered with 35 prestigious financial services, retail, and non-profit organizations to provide the best internship experience to our students in Vietnam",
+      golds: ["/assets/images/logo/VN_Esports.png", "/assets/images/logo/PWC.png", "/assets/images/logo/PM-Vinataba.jpg", "/assets/images/logo/EY.png"],
+      silvers: ["/assets/images/logo/HSC.jpg", "/assets/images/logo/Yola.jpg", "/assets/images/logo/Kinh_Do.png", "/assets/images/logo/E2.gif", "/assets/images/logo/VinaCapital.jpg", "/assets/images/logo/Horizon.jpg"]
     }
   },
 
@@ -69,18 +71,18 @@ var App = {
     right: {
       title: "Dates and Deadlines",
       events: [
-        {date: "January 2016", name:"VN/Asia Webinar (Time TBD)"},
-        {date: "20/12/15", name:"US/Europe Webinar (10am EST - 11am EST)"}
+        {date: "01/16", name:"VN/Asia Webinar (Time TBD)"},
+        {date: "20/12/15", name:"US/Europe Webinar (10 a.m. EST - 11 a.m. EST)"}
       ],
-      deadline: {date: "15/01/16", description: "Deadline to Apply for Summer Program 2016"}
+      deadline: {date: "15/01/16", description: "Deadline to Apply for 2016 Summer Program"}
     },
     process: {
       title: "Application Process Timeline",
       rounds: [
-        {name: "Round 1", time: "15/12/2015 - 15/1/2016"},
-        {name: "Round 2", time: "15/2/2016 - 4/3/2016"},
-        {name: "Round 3", time: "16/3/2016 - 16/4/2016"},
-        {name: "Final Offers", time: "April 2016"}
+        {name: "Round 1", time: "15/12/15 - 15/01/16"},
+        {name: "Round 2", time: "15/02/16 - 04/03/16"},
+        {name: "Round 3", time: "16/03/16 - 16/04/16"},
+        {name: "Final Offer", time: "April 2016"}
       ],
       paragraph: {
         title: "SEO-Vietnam Career Program",
@@ -101,19 +103,19 @@ var App = {
             {
               name: "EY",
               logo: "EY.png",
-              description: "EY is a multinational professional services firm headquartered in London, United Kingdom. It is one of the “Big Four” audit firms, and is the third largest professional services firm in the world by aggregated revenue in 2014, after PwC and Deloitte."
+              description: "EY is one of the “Big Four” audit firms, and is the third largest professional services firm in the world by aggregated revenue in 2014, after PwC and Deloitte"
             },
             {
               name: "PwC",
               logo: "PWC.png",
-              description: " PricewaterhouseCoopers is a multinational professional services network. It is the largest professional services firm in the world, and is one of the “Big Four” auditors."
+              description: " PricewaterhouseCoopers is a multinational professional services network. It is the largest professional services firm in the world, and is one of the “Big Four” auditors"
             }
           ],
           silvers: [
             {
               name: "Horizon",
               logo: "Horizon.jpg",
-              description: "Horizon Capital Group provides investment banking, corporate finance advisory, securities brokerage, and asset management services. The firm's subsidiaries include Horizon Securities Corporation, Horizon Capital Advisers, and Horizon Capital Assets Management."
+              description: "Horizon Capital Group provides investment banking, corporate finance advisory, securities brokerage, and asset management services"
             },
             {
               name: "VinaCapital",
@@ -123,7 +125,7 @@ var App = {
             {
               name: "HSC",
               logo: "HSC.jpg",
-              description: "Ho Chi Minh City Securities Corporation (HSC) is a professional securities brokerage and equity firm in Vietnam. HSC delivers a comprehensive list of financial services for Private and Institutional Clients and provides professional investment advisory"
+              description: "Ho Chi Minh City Securities Corporation is a professional securities brokerage and equity firm in Vietnam. HSC delivers a comprehensive list of financial services and provides professional investment advisory"
             }
           ],
           normals:[
@@ -267,7 +269,7 @@ var App = {
   },
 
   program : {
-    title : "SEO-VN Summer Program",
+    title : "SEO-Vietnam Programs",
     sideBar : [
       {
         title: "Program Overview",
@@ -294,7 +296,7 @@ var App = {
     content: {
       globalPresence: {
         image: "/assets/images/programs/map2.png",
-        description: ["Optional text block about global presence.", "No nulla debet percipitur vim, cu sed case instructior. Nominavi tacimates ut vel. Nibh nemore dicunt ei qui, ex enim soleat dissentiet mei."],
+        description: ["Chosen from a selective and diverse pool of applicants from all over the world, SEO-Vietnam participants have successfully secured internships through our platform with 35 partner companies across 6 different industries"],
         statisticImage: "http://placehold.it/992x712?text=Chart"
       },
       components: {
@@ -302,36 +304,35 @@ var App = {
         items: [
           {
             title: "Internship Placement",
-            introduction: "Text block about internship placement.",
-            lines: ["No nulla debet percipitur vim, cu sed case instructor. Nominavi taci-mastes ut vel. Nibh nemore dicunt ei qui. ex soleat dissentiet mei.", "Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te."],
+            lines: ["Since 2009, our annual career program has connected hundreds of high-performing students with top-notch internships in Vietnam"],
             images: ["/assets/images/programs/Internship-Placement_1.jpg", "/assets/images/programs/Internship-Placement_2.jpg"]
           },
           {
             title: "Training Program",
-            lines: ["On top of the internships, students attend a rigorous training program designed to build up a string skills set critical to career success."],
+            lines: ["On top of the internship, our students attend a rigorous training program designed to build up technical knowledge and soft skills critical to career success"],
             images: ["/assets/images/programs/Training-Program_1.jpg", "/assets/images/programs/Training-Program_2.jpg"]
           },
           {
             title: "Careers Talk",
-            lines: ["SEO-V Careers Program also includes bi-weekly on-site visits and networking events at partner companies."],
+            lines: ["SEO-V Career Program also includes bi-weekly on-site visits and networking events at partner companies to gain insights on the working environment in Vietnam"],
             images: ["/assets/images/programs/Speaker-Series_1.jpg", "/assets/images/programs/Speaker-Series_2.jpg"]
           },
           {
             title: "Community Projects",
-            lines: ["Students give back to the community by completing a 8-week project with a local NPO."],
+            lines: ["SEO-V inspires a sense of social responsibility as all its participants complete a 8-week project with a local non-profit"],
             images: ["/assets/images/programs/Community-Service_1.jpg", "/assets/images/programs/Community_Service-2.jpg"]
           }
         ]
       },
       speech: {
         text: "It does not matter where you start, it matters how fast you grow.",
-        owner: "Tony Ngo, Chairman and Founder"
+        owner: "Tony Ngo, Founder and Board Member"
       }
     }
   },
 
   momentumProgram : {
-    title : "SEO-VN Summer Program",
+    title : "SEO-Vietnam Programs",
     sideBar : [
       {
         title: "Program Overview",
@@ -385,12 +386,12 @@ var App = {
   },
 
   pastPrograms : {
-    title : "SEO-VN Summer Program",
+    title : "SEO-Vietnam Programs",
     description: {
-      title: "Insert quote or descriptive text block.",
-      text: "Lorem ipsum dolor sit amet, et usu fabulas vocibus, assum fabellas sensibus est te. Et priimpedit rationibus, modo commune qualis-que usu ei, nam eu habeo expetenda."
+      title: "SEO-Vietnam career program gives students an opportunity to secure 8-to-10-week internships with 35 employers in Vietnam across 6 different industries: Finance, Technology, Media & Entertainment, Education, FMCG, and Non-profit",
+      text: "On top of internship placement, rigorous training, insightful speaker series and meaningful social work, our students build up a strong professional network and create friendship that last so much longer than the 10-week summer or spring experience"
     },
-    instruction: "Select a year, or just scroll.",
+    instruction: "Select a year, or just scroll",
     sideBar : [
       {
         title: "Program Overview",
@@ -415,7 +416,7 @@ var App = {
       }
     ],
     timeline: {
-      title: "SEO-VN through History",
+      title: "SEO-Vietnam through History",
       chart: [
         {
           year: 2009,
@@ -424,8 +425,8 @@ var App = {
         },
         {
           year: 2010,
-          interns: {count: 15, subfix: "Interns"},
-          companies: {count: 16, subfix: "Companies"}
+          interns: {count: 13, subfix: "Interns"},
+          companies: {count: 7, subfix: "Companies"}
         },
         {
           year: 2011,
@@ -459,13 +460,13 @@ var App = {
         year: 2015,
         events: [
           {
-            description: "SEO-Vietnam hosted its first career program in Hanoi, connecting more and more candidates to companies based in the area.",
+            description: "In 2015, SEO-Vietnam hosted its first career program in Hanoi, connecting more and more candidates to opportunities based in the region",
             image: "/assets/images/programs/past/2015_1.jpg",
             type: 2,
             isFirst: true
           },
           {
-            description: "2015 is the first year SEO-Vietnam initiated a spring career program tailored for local students in both Hanoi and HCMC.",
+            description: "2015 is also the first year SEO-Vietnam initiated a spring career program tailored for local students in both Hanoi and HCMC",
             image: "/assets/images/programs/past/2015_2.jpg",
             type: 2
           }
@@ -475,13 +476,13 @@ var App = {
         year: 2014,
         events: [
           {
-            description: "In addition to offline info sessions, SEO-Vietnam hosts the first series of live Webinar where candidates could ask questions for panelists directly",
+            description: "In 2014, SEO-Vietnam hosts the first series of live Webinar where candidates could ask questions for panelists directly",
             image: "/assets/images/programs/past/2014.jpg",
             type: 2,
             isFirst: true
           },
           {
-            description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis",
+            description: "We registered the biggest summer class of interns as 57 students secure internships from our partner companies",
             image: "/assets/images/programs/past/2014_2.jpg",
             type: 2
           }
@@ -491,13 +492,13 @@ var App = {
         year: 2013,
         events: [
           {
-            description: "The SEO-Vietnam success story carried on with more and more applicants securing the best internships.",
+            description: "The SEO-Vietnam success story carried on as the class size increased by 37% compared to the previous year",
             image: "/assets/images/programs/past/2013_1.jpg",
             type: 2,
             isFirst: true
           },
           {
-            description: "SEO-Vietnam registered 37 students interning at 18 companies for its 2013 summer program.",
+            description: "In 2013, SEO-Vietnam altered its community service component to give students a choice of three local NPOs to work with over a period of 8 weeks",
             image: "/assets/images/programs/past/2013_2.jpg",
             type: 2
           }
@@ -507,7 +508,7 @@ var App = {
         year: 2012,
         events: [
           {
-            description: "In summer 2012, SEO-Vietnam made an impressive achievement – doubling the number of applicants.",
+            description: "In summer 2012, SEO-Vietnam made an impressive achievement – doubling the number of applicants",
             image: "/assets/images/programs/past/2012_1.jpg",
             type: 2,
             isFirst: true
@@ -523,13 +524,13 @@ var App = {
         year: 2011,
         events: [
           {
-            description: "In summer 2011, SEO-Vietnam successfully expanded our program to include partner employers ranging from financial services firms, technology start-ups to educational institution.",
+            description: "In summer 2011, SEO-Vietnam successfully expanded our program to include more partner employers ranging from financial services firms, technology start-ups to educational institutions",
             image: "/assets/images/programs/past/2011_1.jpg",
             type: 2,
             isFirst: true
           },
           {
-            description: "We hosted the first off-line info session at various local universities to promote our organization to more students.",
+            description: "We hosted the first off-line info session at various universities to promote our organization to more local students",
             image: "/assets/images/programs/past/2011_2.jpg",
             type: 2
           }
@@ -539,7 +540,7 @@ var App = {
         year: 2010,
         events: [
           {
-            description: "In summer 2010, SEO-IIV hosted a total of 13 summer seminar series, 9 training sessions and workshops, with one opening dinner accompanied by the welcoming speech by the founders of SEO, and provided a mentoring program.",
+            description: "In 2010, IIV partnered with Sponsors for Educational Opportunity (SEO) to form SEO-Vietnam. In its first year, SEO-Vietnam successfully placed 13 students in 7 firms at several prestigious financial services, retail, and non-profit organizations in Vietnam. We hosted a total of 13 summer seminar series, 9 training sessions and workshops, with one opening dinner accompanied by the welcoming speech by the founders of SEO, and provided a mentoring program.",
             type: 1,
             isFirst: true
           },
@@ -566,7 +567,7 @@ var App = {
         year: 2009,
         events: [
           {
-            description: "The summer program of 2009 provided opportunities to connect 5 interns from a diversity of backgrounds with Vietnamese leading financial firms (Horizon Capital and IDG Ventures Vietnam). The interns were placed in different divisions of IIV’s partner companies, receiving on-the-job training and mentorship from a firm supervisor. This ideology of giving the interns first hand experience during their internship enhanced IIV’s quality as an internship provider in Vietnam, and also a close model to professional internships in New York or London. In addition, an emphasis on the “giving back to society” spirit was also put forward. Every intern was required to work on a community project of their own, contributing through volunteerism and leadership.",
+            description: "In 2009, Tony Ngo founded 'Interns in Vietnam' (IIV). The initial summer program of 2009 provided opportunities to connect 5 interns from a diversity of backgrounds with Vietnamese leading financial firms (Horizon Capital and IDG Ventures Vietnam). The interns were placed in different divisions of IIV’s partner companies, receiving on-the-job training and mentorship from a firm supervisor. This ideology of giving the interns first hand experience during their internship enhanced IIV’s quality as an internship provider in Vietnam, and also a close model to professional internships in New York or London. In addition, an emphasis on the “giving back to society” spirit was also put forward. Every intern was required to work on a community project of their own, contributing through volunteerism and leadership.",
             type: 1,
             isFirst: true
           }
@@ -606,9 +607,9 @@ var App = {
     ],
     vision: "SEO-Vietnam is a non-profit organization founded in 2009 with a vision to create a powerful network of support and develop leadership capacity among professionals who will make a difference in Vietnam. We aspire to be a driving force that will propel young, bright-minded and ambitious Vietnamese forward for a successful future of Vietnam by giving them guidance and opportunities to grow. We aim to inspire them to cultivate intellect, character, integrity and a sense of social responsibility for the progressive and sustainable development of the nation.",
     mission: [
-        "Connecting high-achieving students and young professionals with structured opportunities to intern and work for leading businesses and non-profit organizations in Vietnam",
-        "Producing outstanding young professionals through rigorous training, mentoring and speaker events",
-        "Inspiring a sense of social responsibility"
+        "Connecting high-achieving students and young professionals with structured opportunities to intern and work for leading businesses and non-profit organizations in Vietnam.",
+        "Producing outstanding young professionals through rigorous training, mentoring and speaker events.",
+        "Inspiring a sense of social responsibility."
     ],
     values: [
       {
@@ -625,7 +626,7 @@ var App = {
       },
       {
         title: "Diversity and Inclusion",
-        text: "We foster an environment that encourages multicultural perspectives and conversations at all levels within our organization"
+        text: "We foster an environment that encourages multicultural perspectives and conversations at all levels within our organization."
       }
     ],
     directors: [
