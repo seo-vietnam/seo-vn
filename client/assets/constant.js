@@ -36,7 +36,7 @@ var App = {
   },
 
   footer: {
-    email: "malnemail@seovn.com",
+    email: "recruitment@seo-vn.org",
     item1 : {name: "Programs.", link: "/programs"},
     item2 : {name: "Apply.", link: "/apply"},
     item3 : {name: "Partners.", link: "/partners"},
@@ -597,7 +597,7 @@ var App = {
       }
     ],
     chairman: {
-      image: "/assets/images/about-us/Tony.jpg",
+      image: "/assets/images/about-us/chairman.jpg",
       text: "Tony Ngo, Chairman and Founder"
     },
     stories: [
@@ -631,44 +631,89 @@ var App = {
     ],
     directors: [
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Tony_1.png",
         name: "Name",
         description: "Description"
       },
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Board_Dana.jpg",
         name: "Name",
         description: "Description"
       },
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Board_Don.jpg",
         name: "Name",
         description: "Description"
       },
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Board_Erik.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "/assets/images/about-us/Board_Heather.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "/assets/images/about-us/Board_Kelly.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=Person",
         name: "Name",
         description: "Description"
       }
     ],
     members: [
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Exec_Anh-Tran-Marketing-D.jpg",
         name: "Name",
         description: "Description"
       },
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Exec_Binh-Ng-Alum-Relations.jpg",
         name: "Name",
         description: "Description"
       },
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Exec_Chi-Mai-Marketing-D.jpg",
         name: "Name",
         description: "Description"
       },
       {
-        image: "http://placehold.it/300x300?text=People",
+        image: "/assets/images/about-us/Exec_Hieu-Nguyen-Hanoi-Ops.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Julie-Hoang-Alum-Relations-D.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Linh-Nguyen-Hanoi-Ops.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Nam-Nguyen-CEO.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Thao-Recruitment.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Tim-Nguyen_External-Relations.jpg",
+        name: "Name",
+        description: "Description"
+      },
+      {
+        image: "http://placehold.it/300x300?text=Person",
         name: "Name",
         description: "Description"
       }

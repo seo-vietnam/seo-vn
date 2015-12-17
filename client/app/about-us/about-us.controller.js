@@ -7,6 +7,8 @@
             $scope.menuFilters = App.aboutUs.sideBar;
             $scope.isActive = function(active) {
                 return active === $stateParams.active;
-            }
+            };
+
+            $(".about-us").scrollTop(0);
     });
 })();
