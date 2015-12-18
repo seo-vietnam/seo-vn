@@ -295,9 +295,9 @@ var App = {
     ],
     content: {
       globalPresence: {
-        image: "/assets/images/programs/map2.png",
+        image: "/assets/images/programs/Map.jpg",
         description: ["Chosen from a selective and diverse pool of applicants from all over the world, SEO-Vietnam participants have successfully secured internships through our platform with 35 partner companies across 6 different industries"],
-        statisticImage: "http://placehold.it/992x712?text=Chart"
+        statisticImage: "/assets/images/programs/Demographic-Graph.jpg"
       },
       components: {
         title: "Program Components",

@@ -31,6 +31,15 @@
     }
 
     &__content {
+        margin-left: 60px;
+        @media(min-width: $screen-tablet) {
+            margin-left: 100px;
+        }
+
+        @media(min-width: $screen-desktop) {
+            margin-left: 160px;
+        }
+
         position:absolute;
         top:40%;
         transform:translate3d(0, -40%,0);

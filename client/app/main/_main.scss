@@ -31,7 +31,7 @@
 
         line-height: 1.4;
         padding: 20px 0 20px 10px;
-        width: 80%;
+        width: 66%;
         float: left;
 
         @media(min-width: $screen-tablet) {
@@ -40,7 +40,7 @@
         }
 
         @media(min-width: $screen-desktop) {
-          width: 70%;
+          width: 66%;
           padding: 100px 0 100px 70px;
           font-size: 21px;
         }
@@ -205,34 +205,3 @@
 .min-height {
   min-height: 800px;
 }
-
-
-
-
-//.thing-form {
-//  margin: 20px 0;
-//}
-//
-//#banner {
-//  border-bottom: none;
-//  margin-top: -20px;
-//}
-//
-//#banner h1 {
-//  font-size: 60px;
-//  line-height: 1;
-//  letter-spacing: -1px;
-//}
-//
-//.hero-unit {
-//  position: relative;
-//  padding: 30px 15px;
-//  color: #F5F5F5;
-//  text-align: center;
-//  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-//  background: #4393B9;
-//}
-//
-//.navbar-text {
-//  margin-left: 15px;
-//}
