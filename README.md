@@ -1,34 +1,24 @@
-# al-booking
+# Seo Vietnam
 
-Airline Ticket Booking Projects
+## Getting Started
 
-# Prepare
- Required
-  - Git: manage source
-  - NodeJs: manage project
-  - plugin: ng-inspector
-  - IDE: Eclipse, Intellji, Sublime text...
-  - OS: window, linux
-  - Responsive Tool: http://lab.maltewassermann.com/viewport-resizer/
+### Prerequisites
 
- Optional
-  - Heroku (option): deploy code
+- [Git](https://git-scm.com/)
+- [Node.js and NPM](nodejs.org) >= v0.12.0
+- [Bower](bower.io) (`npm install --global bower`)
+- [Ruby](https://www.ruby-lang.org) and then `gem install sass`
+- [Grunt](http://gruntjs.com/) (`npm install --global grunt-cli`)
 
-# Steps
- To build new project
-  - Install Yeoman and required: npm install -g yo bower grunt-cli gulp
-  - Install AngularJS full stack Generator: npm install -g generator-angular-fullstack
-  - Create new empty Directory and cd into
-  - Generate Project: yo angular-fullstack
+### Developing
 
- To develop an existing project
-  - Clone from Github:
-    + Source Code: https://github.com/Cragon88/AlBooking
-    + Release Code: https://github.com/Cragon88/AlBooking-Deploy
+1. Run `npm install` to install server dependencies.
 
- Download dependencies
-  - npm install
-  - bower install
+2. Run `bower install` to install front-end dependencies.
 
- Run
-  - grunt serve
+3. Run `grunt serve` (add --force if needed) to start the development server. It should automatically open the client in your browser when ready.
+(localhost:9000)
+
+## Build & development
+
+Run `grunt build` for building and `grunt serve` for preview.
