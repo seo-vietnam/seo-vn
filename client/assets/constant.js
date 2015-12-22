@@ -598,12 +598,14 @@ var App = {
     ],
     chairman: {
       image: "/assets/images/about-us/chairman.jpg",
-      text: "Tony Ngo, Chairman and Founder"
+      text: "Tony Ngo, Founder and Board President"
     },
     stories: [
       "Since 2007 when he first met with management teams in Vietnam as an investor, Tony Ngo has observed the need and potential for talented young leaders to shape the trajectory of Vietnam's development. In 2009, Tony founded 'Interns in Vietnam' (IIV) to develop leaders who will not only succeed on an individual level, but will also make a difference by driving business, economic, and social changes in their communities.",
+      'In 2009, Tony founded "Interns in Vietnam" (IIV) to develop leaders who will not only succeed on an individual level, but will also make a difference by driving business, economic, and social changes in their communities.',
       "IIV is predicated on cultivating professional development and leadership skills, and IIV’s first initiative achieves this through a summer internship program that connects high-achieving students with opportunities in Vietnam. The initial program successfully placed five students at Horizon Capital and IDG Ventures Vietnam in the summer of 2009.",
-      "In 2010, IIV partnered with Sponsors for Educational Opportunity (SEO), a U.S based non-profit organization that provides educational and career programs to young people from underserved communities, to form SEO-Vietnam. In its first year, SEO-Vietnam received over 180 applications and successfully placed 13 students in 7 firms at several prestigious financial services, retail, and non-profit organizations in Vietnam. The program also expanded to include rigorous training, mentorship and a Summer Seminar Series that featured executives and leaders in business, government and non-profit organizations."
+      "In 2010, IIV partnered with Sponsors for Educational Opportunity (SEO), a U.S based non-profit organization that provides educational and career programs to young people from underserved communities, to form SEO-Vietnam.",
+      "In its first year, SEO-Vietnam received over 180 applications and successfully placed 13 students in 7 firms at several prestigious financial services, retail, and non-profit organizations in Vietnam. The program also expanded to include rigorous training, mentorship and a Summer Seminar Series that featured executives and leaders in business, government and non-profit organizations."
     ],
     vision: "SEO-Vietnam is a non-profit organization founded in 2009 with a vision to create a powerful network of support and develop leadership capacity among professionals who will make a difference in Vietnam. We aspire to be a driving force that will propel young, bright-minded and ambitious Vietnamese forward for a successful future of Vietnam by giving them guidance and opportunities to grow. We aim to inspire them to cultivate intellect, character, integrity and a sense of social responsibility for the progressive and sustainable development of the nation.",
     mission: [
@@ -631,91 +633,125 @@ var App = {
     ],
     directors: [
       {
-        image: "/assets/images/about-us/Tony_1.png",
-        name: "Name",
-        description: "Description"
+        image: "/assets/images/about-us/Board_Heather.jpg",
+        name: "Heather Nguyen",
+        title: "Chairwoman",
+        description: "Cinema Marketing Director at Galaxy Studio",
+        link: "https://vn.linkedin.com/in/heathernguyen"
       },
       {
-        image: "/assets/images/about-us/Board_Dana.jpg",
-        name: "Name",
-        description: "Description"
+        image: "/assets/images/about-us/Board_Tony.jpg",
+        name: "Tony Ngo",
+        title: "Founder",
+        description: "Chairman and Co-CEO at Everest Education",
+        link: "https://vn.linkedin.com/in/ztngo"
       },
       {
         image: "/assets/images/about-us/Board_Don.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
-        image: "/assets/images/about-us/Board_Erik.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
-        image: "/assets/images/about-us/Board_Heather.jpg",
-        name: "Name",
-        description: "Description"
+        name: "Don Le",
+        title: "Board Member",
+        description: "Co-CEO at Everest Education",
+        link: "https://vn.linkedin.com/in/donle35"
       },
       {
         image: "/assets/images/about-us/Board_Kelly.jpg",
-        name: "Name",
-        description: "Description"
+        name: "Kelly Wong",
+        title: "Board Member",
+        description: "Group CFO at Kido Group",
+        link: "https://vn.linkedin.com/in/kyhwong"
+      },
+      {
+        image: "/assets/images/about-us/Board_Dana.jpg",
+        name: "Dana Doan",
+        title: "Board Member",
+        description: "Founder and Strategic Advisor to the LIN Center for Community Development",
+        link: "https://vn.linkedin.com/in/danarhdoan"
       },
       {
         image: "http://placehold.it/300x300?text=Person",
-        name: "Name",
-        description: "Description"
+        name: "Giang Nguyen",
+        title: "Board Member",
+        description: "Head of Investment Banking South at Saigon Securities Inc.",
+        link: "https://vn.linkedin.com/in/nguyen-giang-3a590248"
+      },
+      {
+        image: "/assets/images/about-us/Board_Erik.jpg",
+        name: "Erik Jonsson",
+        title: "Board Member",
+        description: "Co-Founder and CEO at Topmot.vn",
+        link: "https://vn.linkedin.com/in/jonssonej"
       }
     ],
     members: [
       {
-        image: "/assets/images/about-us/Exec_Anh-Tran-Marketing-D.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
-        image: "/assets/images/about-us/Exec_Binh-Ng-Alum-Relations.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
-        image: "/assets/images/about-us/Exec_Chi-Mai-Marketing-D.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
-        image: "/assets/images/about-us/Exec_Hieu-Nguyen-Hanoi-Ops.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
-        image: "/assets/images/about-us/Exec_Julie-Hoang-Alum-Relations-D.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
-        image: "/assets/images/about-us/Exec_Linh-Nguyen-Hanoi-Ops.jpg",
-        name: "Name",
-        description: "Description"
-      },
-      {
         image: "/assets/images/about-us/Exec_Nam-Nguyen-CEO.jpg",
-        name: "Name",
-        description: "Description"
+        name: "Nam Nguyen",
+        title: "CEO",
+        description: "Senior Investment Analyst at VIG",
+        link: "https://vn.linkedin.com/in/namnguyenvn"
       },
       {
         image: "/assets/images/about-us/Exec_Thao-Recruitment.jpg",
-        name: "Name",
-        description: "Description"
+        name: "Thao Duong",
+        title: "Recruitment Director",
+        description: "Senior at UT Dallas",
+        link: "https://vn.linkedin.com/in/thaoduong252"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Chi-Mai-Marketing-D.jpg",
+        name: "Chi Mai",
+        title: "Overseas Marketing Director",
+        description: "Investment Banking Analyst at UBS ",
+        link: "https://vn.linkedin.com/in/chiyenmai"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Anh-Tran-Marketing-D.jpg",
+        name: "Anh Tran",
+        title: "Local Marketing Director",
+        description: "Graduate Trainee at Castrol BP",
+        link: "https://vn.linkedin.com/in/duc-anh-tran-22915748"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Binh-Ng-Alum-Relations.jpg",
+        name: "Binh Nguyen",
+        title: "Alumni Relations Director",
+        description: "Business Development Lead at Kiva Fellow",
+        link: "https://vn.linkedin.com/in/binhqnguyen"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Julie-Hoang-Alum-Relations-D.jpg",
+        name: "Julie Hoang",
+        title: "Alumni Relations Director",
+        description: "CRM & Digital Analytics Consultant at Havas",
+        link: "https://vn.linkedin.com/in/thaohoang08"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Hieu-Nguyen-Hanoi-Ops.jpg",
+        name: "Hieu Nguyen",
+        title: "Hanoi Ops Director",
+        description: "Classical Music Singer",
+        link: "https://vn.linkedin.com/in/hieu-nguyen-6699251b"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Linh-Nguyen-Hanoi-Ops.jpg",
+        name: "Linh Nguyen",
+        title: "Hanoi Ops Director",
+        description: "Finance Director - PAN Food JSC",
+        link: "#"
       },
       {
         image: "/assets/images/about-us/Exec_Tim-Nguyen_External-Relations.jpg",
-        name: "Name",
-        description: "Description"
+        name: "Anh Nguyen",
+        title: "External Relations Director",
+        description: "Business Analyst at BCG",
+        link: 'https://vn.linkedin.com/in/anh-"tim"-le-nguyen-52268630'
       },
       {
         image: "http://placehold.it/300x300?text=Person",
-        name: "Name",
-        description: "Description"
+        name: "Khanh Nguyen",
+        title: "Momentum Program Director",
+        description: "Co-Founder at GAP Institute",
+        link: "#"
       }
     ]
   },

@@ -56,15 +56,23 @@
     ul {
       list-style-type: none;
       text-align: center;
+      padding: 0;
       li {
         display: inline-block;
-        width: 120px;
+        width: 65px;
         height: 40px;
         line-height: 48px;
         margin-left: -5px;
         &:last-child {
           width: 48px;
           text-align: right;
+        }
+
+        @media(min-width: $screen-phone) {
+          width: 100px;
+        }
+        @media(min-width: $screen-tablet) {
+          width: 120px;
         }
       }
     }

@@ -5,7 +5,7 @@ header
     .row
       h1.past-programs__title {{App.pastPrograms.title}}
     .row.past-programs__content
-      aside.col-xs-3
+      aside.col-xs-4.col-sm-3
         .row.side-bar
           .side-bar__item(ng-repeat="item in menuFilters")
             a(href="{{item.link}}")
@@ -14,7 +14,7 @@ header
               .side-bar__item__branch(ng-repeat="subItem in item.items")
                 a(href="{{subItem.link}}")
                  p(ng-class="{'side-bar__item--active': subItem.active}") {{subItem.title}}
-      main.col-xs-9
+      main.col-xs-8.col-sm-9
         .row.past-programs__content__main
           .past-programs__content__main__line {{App.pastPrograms.description.title}}
           .past-programs__content__main__line {{App.pastPrograms.description.text}}

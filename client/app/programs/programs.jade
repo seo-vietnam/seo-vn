@@ -18,10 +18,10 @@ header
           .programs__main__block
             img.programs__main__block__img(src="{{App.program.content.globalPresence.image}}" alt="")
             .programs__main__block--container
-              .programs__main__block__left.col-xs-5
+              .programs__main__block__left.col-sm-5
                 .programs__main__block__line(ng-repeat="line in App.program.content.globalPresence.description")
                   | {{line}}
-              .programs__main__block__right.col-xs-7
+              .programs__main__block__right.col-sm-7
                 img.programs__main__block__img(src="{{App.program.content.globalPresence.statisticImage}}" alt="")
     section.programs__main__components
       h2.programs__main__components__head-title {{App.program.content.components.title}}
@@ -34,7 +34,7 @@ header
             .programs__main__components__item__content__line(ng-repeat="line in item.lines track by $index")
               p {{line}}
             .row
-              .programs__main__components__item__content__image.col-xs-6(ng-repeat="img in item.images track by $index")
+              .programs__main__components__item__content__image.col-sm-6(ng-repeat="img in item.images track by $index")
                 img(src="{{img}}" alt="")
     .programs__main__speech
       h6.programs__main__speech__text "{{App.program.content.speech.text}}"

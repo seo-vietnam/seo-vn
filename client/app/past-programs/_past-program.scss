@@ -21,19 +21,30 @@
     margin-bottom: 40px;
     &__main {
       &__line {
-        font-size: 18px;
+        font-size: 12px;
         font-family: $font-bold;
+        @media(min-width: $screen-phone) {
+          font-size: 18px;
+        }
       }
     }
   }
 
   &__timeline {
-    font-size: 18px;
+    margin-top: 25px;
+    font-size: 10px;
+    @media(min-width: $screen-phone) {
+      font-size: 18px;
+    }
     &__title {
       position: absolute;
-      bottom: 0;
+      bottom: -60px;
       text-align: center;
       color: $green;
+
+      @media(min-width: $screen-tablet) {
+        bottom: 0;
+      }
     }
 
     &__chart {

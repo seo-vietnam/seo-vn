@@ -31,7 +31,10 @@
     }
 
     &__content {
-        margin-left: 60px;
+        margin-left: 20px;
+        @media(min-width: $screen-phone) {
+            margin-left: 60px;
+        }
         @media(min-width: $screen-tablet) {
             margin-left: 100px;
         }

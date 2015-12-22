@@ -11,10 +11,14 @@
     &__company-mission {
       overflow: auto;
       background-color: white;
-      margin: 40px 0 40px 60px;
+      margin: 10px 0 10px 20px;
       border-top: 4px solid $green;
       border-left: 4px solid $green;
       border-bottom: 4px solid $green;
+
+      @media(min-width: $screen-phone) {
+        margin: 40px 0 40px 60px;
+      }
 
       @media(min-width: $screen-tablet) {
         margin: 70px 0 70px 100px;
@@ -27,12 +31,17 @@
       &__content {
         color: $green;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
 
         line-height: 1.4;
         padding: 20px 0 20px 10px;
-        width: 66%;
+        width: 80%;
         float: left;
+
+        @media(min-width: $screen-phone) {
+          font-size: 16px;
+          width: 66%;
+        }
 
         @media(min-width: $screen-tablet) {
           padding: 50px 0 50px 35px;
@@ -40,7 +49,6 @@
         }
 
         @media(min-width: $screen-desktop) {
-          width: 66%;
           padding: 100px 0 100px 70px;
           font-size: 21px;
         }
@@ -70,8 +78,20 @@
     &__partners {
       font-family: $font-pd;
       background-color: white;
-      padding: 50px 160px;
+      padding: 20px 20px;
       overflow: auto;
+
+      @media(min-width: $screen-phone) {
+        padding: 30px 60px;
+      }
+
+      @media(min-width: $screen-tablet) {
+        padding: 40px 100px;
+      }
+
+      @media(min-width: $screen-desktop) {
+        padding: 50px 160px;
+      }
 
       &__title {
         text-align: center;
@@ -120,8 +140,13 @@
             min-height: 250px;
             margin: 0 auto;
             overflow: hidden;
+
+            @media(min-width: $screen-phone) {
+              min-height: 350px;
+            }
+
             @media(min-width: $screen-tablet) {
-              min-height: 200px;
+              min-height: 230px;
 
             }
             @media(min-width: $screen-desktop) {
@@ -153,14 +178,25 @@
         img {
           width: 80%;
           height: auto;
+          @media(min-width: $screen-phone) {
+            width: 70%;
+
+          }
+          @media(min-width: $screen-desktop) {
+            width: 80%;
+          }
         }
       }
     }
 
     &__img {
       position: absolute;
-      top: 180px;
-      right: -20%;
+      top: 220px;
+      right: -30%;
+      @media(min-width: $screen-phone) {
+        top: 180px;
+        right: -20%;
+      }
       @media(min-width: $screen-tablet) {
         top: 250px;
         right: -20%;

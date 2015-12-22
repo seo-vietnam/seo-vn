@@ -52,6 +52,10 @@
 
       &__line {
         font-weight: bold;
+        font-size: 12px;
+        @media(min-width: $screen-phone) {
+          font-size: 14px;
+        }
       }
     }
 
@@ -71,8 +75,17 @@
           padding-bottom: 50px;
         }
         &__title {
-          padding-left: 100px;
+          padding-left: 15px;
           margin: 0;
+          @media(min-width: $screen-phone) {
+            padding-left: 25px;
+          }
+          @media(min-width: $screen-tablet) {
+            padding-left: 70px;
+          }
+          @media(min-width: $screen-desktop) {
+            padding-left: 100px;
+          }
         }
         &__content {
           &__first-line {
@@ -84,6 +97,7 @@
           }
 
           &__image {
+            padding-top: 15px;
             img {
               width: 100%;
               height: auto;

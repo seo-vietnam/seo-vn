@@ -38,12 +38,16 @@
 
     &__menu {
 
-      text-align: right;
+      text-align: left;
+      @media (min-width: $screen-tablet) {
+        text-align: right;
+      }
       &--active {
         color: $green;
       }
 
       &__line-1 {
+        text-align: right;
         a {
           text-decoration: none;
           color: black;
@@ -64,11 +68,20 @@
       }
 
       &__line-2 {
-        margin-top: 21px;
+        margin-top: 11px;
+        margin-left: 30px;
+        @media (min-width: $screen-tablet) {
+          margin-left: 0;
+          margin-top: 21px;
+        }
         @media (min-width: $screen-desktop) {
           margin-top: 24px;
         }
         &__item{
+          padding-bottom: 15px;
+          @media (min-width: $screen-tablet) {
+            padding-bottom: 0;
+          }
           a {
             color: black;
             text-decoration: none;

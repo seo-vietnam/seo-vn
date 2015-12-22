@@ -1,7 +1,7 @@
 header
 .container
   .apply
-    .apply__banner
+    .row.apply__banner
       .apply__banner__bg
       .apply__banner__content
         h1.apply__banner__title.col-xs-12 {{App.apply.title}}
@@ -28,10 +28,10 @@ header
               span {{App.button.startMyApplication}}
     .apply__process
       .row
-        .col-xs-4
+        .col-sm-4
           .apply__process__table__title.apply__process__table__title--right
             h3 {{App.apply.process.title}}
-        .apply__process__table.col-xs-7
+        .apply__process__table.col-sm-8
           table.table.table-bordered
             tr(ng-repeat="round in App.apply.process.rounds")
               td.apply__process__table__cell--name {{round.name}}
