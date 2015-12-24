@@ -103,7 +103,7 @@ var App = {
             {
               name: "EY",
               logo: "EY.png",
-              description: "EY is one of the “Big Four” audit firms, and is the third largest professional services firm in the world by aggregated revenue in 2014, after PwC and Deloitte"
+              description: 'EY is a global leader in assurance, tax, transactions and advisory services. It is one of the "Big Four" audit firms'
             },
             {
               name: "PwC",
@@ -326,7 +326,7 @@ var App = {
       },
       speech: {
         text: "It does not matter where you start, it matters how fast you grow.",
-        owner: "Tony Ngo, Founder and Board Member"
+        owner: "Tony Ngo, Founder & President"
       }
     }
   },
@@ -598,7 +598,7 @@ var App = {
     ],
     chairman: {
       image: "/assets/images/about-us/chairman.jpg",
-      text: "Tony Ngo, Founder and Board President"
+      text: "Tony Ngo, Founder and President"
     },
     stories: [
       "Since 2007 when he first met with management teams in Vietnam as an investor, Tony Ngo has observed the need and potential for talented young leaders to shape the trajectory of Vietnam's development. In 2009, Tony founded 'Interns in Vietnam' (IIV) to develop leaders who will not only succeed on an individual level, but will also make a difference by driving business, economic, and social changes in their communities.",
@@ -642,7 +642,7 @@ var App = {
       {
         image: "/assets/images/about-us/Board_Tony.jpg",
         name: "Tony Ngo",
-        title: "Founder",
+        title: "Founder and President",
         description: "Chairman and Co-CEO at Everest Education",
         link: "https://vn.linkedin.com/in/ztngo"
       },
@@ -668,7 +668,7 @@ var App = {
         link: "https://vn.linkedin.com/in/danarhdoan"
       },
       {
-        image: "http://placehold.it/300x300?text=Person",
+        image: "/assets/images/about-us/Board_Giang.jpg",
         name: "Giang Nguyen",
         title: "Board Member",
         description: "Head of Investment Banking South at Saigon Securities Inc.",
@@ -680,13 +680,20 @@ var App = {
         title: "Board Member",
         description: "Co-Founder and CEO at Topmot.vn",
         link: "https://vn.linkedin.com/in/jonssonej"
+      },
+      {
+        image: "/assets/images/about-us/Board_Dung_Le.jpg",
+        name: "Dung Le",
+        title: "Board Member",
+        description: "Group Managing Director and CRO at Techcombank",
+        link: "https://www.linkedin.com/in/badung-le-3951602a"
       }
     ],
     members: [
       {
         image: "/assets/images/about-us/Exec_Nam-Nguyen-CEO.jpg",
         name: "Nam Nguyen",
-        title: "CEO",
+        title: "Executive Director",
         description: "Senior Investment Analyst at VIG",
         link: "https://vn.linkedin.com/in/namnguyenvn"
       },
@@ -740,6 +747,13 @@ var App = {
         link: "#"
       },
       {
+        image: "/assets/images/about-us/Exec_Thu-Nguyen.jpg",
+        name: "Thu Nguyen",
+        title: "HCMC Ops Director",
+        description: "Marketing & Business Development Analyst at Everest Education",
+        link: "https://vn.linkedin.com/in/thu-nguyen-89071730"
+      },
+      {
         image: "/assets/images/about-us/Exec_Tim-Nguyen_External-Relations.jpg",
         name: "Anh Nguyen",
         title: "External Relations Director",
@@ -747,11 +761,11 @@ var App = {
         link: 'https://vn.linkedin.com/in/anh-"tim"-le-nguyen-52268630'
       },
       {
-        image: "http://placehold.it/300x300?text=Person",
-        name: "Khanh Nguyen",
+        image: "/assets/images/about-us/Exec_Khanh-Ngo.jpg",
+        name: "Khanh Ngo",
         title: "Momentum Program Director",
         description: "Co-Founder at GAP Institute",
-        link: "#"
+        link: "https://vn.linkedin.com/in/giakhanh"
       }
     ]
   },
