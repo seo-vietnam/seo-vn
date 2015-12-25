@@ -103,7 +103,7 @@ var App = {
             {
               name: "EY",
               logo: "EY.png",
-              description: 'EY is a global leader in assurance, tax, transactions and advisory services. It is one of the "Big Four" audit firms'
+              description: "EY is a global leader in assurance, tax, transactions and advisory services. It is one of the 'Big Four' audit firms"
             },
             {
               name: "PwC",
@@ -185,7 +185,7 @@ var App = {
           ]
         }
       }, {
-        title: "Media",
+        title: "Entertainment",
         items: {
           golds: [
             {
@@ -543,23 +543,6 @@ var App = {
             description: "In 2010, IIV partnered with Sponsors for Educational Opportunity (SEO) to form SEO-Vietnam. In its first year, SEO-Vietnam successfully placed 13 students in 7 firms at several prestigious financial services, retail, and non-profit organizations in Vietnam. We hosted a total of 13 summer seminar series, 9 training sessions and workshops, with one opening dinner accompanied by the welcoming speech by the founders of SEO, and provided a mentoring program.",
             type: 1,
             isFirst: true
-          },
-          {
-            items: [
-              {
-                image: "http://placehold.it/400x500?text=Image",
-                description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis.",
-              },
-              {
-                image: "http://placehold.it/400x500?text=Image",
-                description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis.",
-              },
-              {
-                image: "http://placehold.it/400x500?text=Image",
-                description: "Lorem ipsum dolor sit amet, consectetur velit sed do eiusmod tempor incididunt ut. Ut enim ad minim veniam, quis.",
-              }
-            ],
-            type: 3
           }
         ]
       },
@@ -602,7 +585,7 @@ var App = {
     },
     stories: [
       "Since 2007 when he first met with management teams in Vietnam as an investor, Tony Ngo has observed the need and potential for talented young leaders to shape the trajectory of Vietnam's development. In 2009, Tony founded 'Interns in Vietnam' (IIV) to develop leaders who will not only succeed on an individual level, but will also make a difference by driving business, economic, and social changes in their communities.",
-      'In 2009, Tony founded "Interns in Vietnam" (IIV) to develop leaders who will not only succeed on an individual level, but will also make a difference by driving business, economic, and social changes in their communities.',
+      'In 2009, Tony founded "Interns in Vietnam" (IIV).',
       "IIV is predicated on cultivating professional development and leadership skills, and IIV’s first initiative achieves this through a summer internship program that connects high-achieving students with opportunities in Vietnam. The initial program successfully placed five students at Horizon Capital and IDG Ventures Vietnam in the summer of 2009.",
       "In 2010, IIV partnered with Sponsors for Educational Opportunity (SEO), a U.S based non-profit organization that provides educational and career programs to young people from underserved communities, to form SEO-Vietnam.",
       "In its first year, SEO-Vietnam received over 180 applications and successfully placed 13 students in 7 firms at several prestigious financial services, retail, and non-profit organizations in Vietnam. The program also expanded to include rigorous training, mentorship and a Summer Seminar Series that featured executives and leaders in business, government and non-profit organizations."
@@ -668,7 +651,7 @@ var App = {
         link: "https://vn.linkedin.com/in/danarhdoan"
       },
       {
-        image: "/assets/images/about-us/Board_Giang.jpg",
+        image: "http://placehold.it/300x300?text=Person",
         name: "Giang Nguyen",
         title: "Board Member",
         description: "Head of Investment Banking South at Saigon Securities Inc.",
@@ -761,8 +744,8 @@ var App = {
         link: 'https://vn.linkedin.com/in/anh-"tim"-le-nguyen-52268630'
       },
       {
-        image: "/assets/images/about-us/Exec_Khanh-Ngo.jpg",
-        name: "Khanh Ngo",
+        image: "http://placehold.it/300x300?text=Person",
+        name: "Khanh Nguyen",
         title: "Momentum Program Director",
         description: "Co-Founder at GAP Institute",
         link: "https://vn.linkedin.com/in/giakhanh"
@@ -772,8 +755,30 @@ var App = {
 
   donate: {
     title: "Deepen Our Impact",
-    description1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque sem quis enim volutpat, sed scelerisque lacus tincidunt. Etiam lorem enim, congue et efficitur posuere, volutpat vel est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut malesuada tempor quam, id pharetra tortor bibendum eu. Morbi efficitur pellentesque purus, sed varius nibh.",
-    description2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pellentesque sem quis enim volutpat, sed scelerisque lacus tincidunt. Etiam lorem enim, congue et efficitur posuere, volutpat vel est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut malesuada tempor quam, id pharetra tortor bibendum eu. Morbi efficitur pellentesque purus, sed varius nibh. Nullam libero dui, rutrum id leo quis, mattis tincidunt sem. In eleifend elit erat, a posuere lacus commodo vel. Vivamus sagittis diam metus, a faucibus lorem tincidunt nec. Nunc non blandit nulla. Mauris blandit sagittis vehicula. Phasellus dictum vestibulum imperdiet.",
+    description1: "This year, we have the ambitious goal of empowering more young Vietnam’s professionals by providing them with great internships, trainings, and networking opportunities. As we are working hard to expand the program, we now need your help more than ever.",
+    description2: "There are currently 3 ways to make donation to us:",
+    description3: "Thank you for your generous support!",
+    payment: [
+      {
+        name : "By Paypal",
+        link: "#",
+        type: 1
+      },
+      {
+        name : "By Venmo (for those in the US/EU)",
+        link: "https://venmo.com/SEO-Vietnam",
+        type: 2
+      },
+      {
+        name : "By Bank Transfer (for those in Vietnam)",
+        lines: [
+          "HSBC Vietnam, HCMC Branch.",
+          "Name: Nguyen Nhu Nam",
+          "Account number: 102-051216-041"
+        ],
+        type: 3
+      }
+    ],
     image: "http://placehold.it/1200x300?text=Image",
     video: "https://www.youtube.com/embed/KOO6MdLuUaU"
   }

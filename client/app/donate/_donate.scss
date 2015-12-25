@@ -27,13 +27,17 @@
     padding: 0 25px;
     &__block {
       &__paragraph {
-        padding-bottom: 50px;
+        //padding-bottom: 50px;
+        &--bold {
+          padding-top: 25px;
+          font-weight: bold;
+        }
       }
 
       &__item {
         &__donate {
           text-align: center;
-          padding-bottom: 50px;
+          padding: 15px 0;
         }
         &__video {
           text-align: center;
@@ -46,6 +50,22 @@
             }
             @media(min-width: $screen-desktop) {
               height: 250px;
+            }
+          }
+        }
+      }
+
+      &__payment {
+
+        a {
+          text-decoration: none;
+          line-height: 1.5;
+        }
+        &__item {
+          &__line {
+            font-weight: bold;
+            &--container {
+              margin-top: 5px;
             }
           }
         }
