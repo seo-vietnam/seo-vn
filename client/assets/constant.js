@@ -20,28 +20,33 @@ var App = {
   },
 
   homeMenu: {
-    item1 : {name: "Programs", link: "/programs"},
-    item2 : {name: "Partners", link: "/partners"},
-    item3 : {name: "About Us", link: "/about-us"},
+    item1 : {name: "About Us", link: "/about-us"},
+    item2 : {name: "Programs", link: "/programs"},
+    item3 : {name: "Partners", link: "/partners"},
     item4 : {name: "Donate", link: "/donate"}
   },
 
   pageMenu: {
     login: "Log in to your application",
-    item1 : {name: "Programs", link: "/programs"},
+    item1 : {name: "About Us", link: "/about-us"},
     item2 : {name: "Apply", link: "/apply"},
-    item3 : {name: "About", link: "/about-us"},
+    item3 : {name: "Programs", link: "/programs"},
     item4 : {name: "Partners", link: "/partners"},
     item5 : {name: "Donate", link: "/donate"}
   },
 
   footer: {
-    email: "recruitment@seo-vn.org",
-    item1 : {name: "Programs.", link: "/programs"},
+    email: "recruitment@seo-vietnam.org",
+    item1 : {name: "About Us.", link: "/about-us"},
     item2 : {name: "Apply.", link: "/apply"},
-    item3 : {name: "Partners.", link: "/partners"},
-    item4 : {name: "About Us.", link: "/about-us"},
-    item5 : {name: "Donate.", link: "/donate"}
+    item3 : {name: "Programs.", link: "/programs"},
+    item4 : {name: "Partners.", link: "/partners"},
+    item5 : {name: "Donate.", link: "/donate"},
+    contact: {
+      facebook: "http://facebook.com/seovie",
+      linkedin: "https://www.linkedin.com/company/sponsors-for-educational-opportunity---vietnam?trk=mini-profile",
+      youtube: "https://www.youtube.com/channel/UChjyPWxFmtRUxzjZ4XZk1yw"
+    }
   },
 
   home : {
@@ -77,11 +82,11 @@ var App = {
       deadline: {date: "15/01/16", description: "Deadline to Apply for 2016 Summer Program"}
     },
     process: {
-      title: "Application Process Timeline",
+      title: "Summer Application Process Timeline",
       rounds: [
-        {name: "Round 1", time: "15/12/15 - 15/01/16"},
-        {name: "Round 2", time: "15/02/16 - 04/03/16"},
-        {name: "Round 3", time: "16/03/16 - 16/04/16"},
+        {name: "Round 1", time: "15/12 - 15/01"},
+        {name: "Round 2", time: "15/02 - 04/03"},
+        {name: "Round 3", time: "16/03 - 16/04"},
         {name: "Final Offer", time: "April 2016"}
       ],
       paragraph: {
@@ -94,7 +99,7 @@ var App = {
 
   partners : {
     title: "Our Partners",
-    sideBarTitle: "View All",
+    sideBarTitle: "View All Partners",
     sideBars: [
       {
         title: "Finance",
@@ -103,7 +108,7 @@ var App = {
             {
               name: "EY",
               logo: "EY.png",
-              description: "EY is a global leader in assurance, tax, transactions and advisory services. It is one of the 'Big Four' audit firms"
+              description: 'EY is a global leader in assurance, tax, transactions and advisory services. It is one of the "Big Four" audit firms'
             },
             {
               name: "PwC",
@@ -282,7 +287,7 @@ var App = {
         active: false,
         items: []
       }, {
-        title: "Be a partner",
+        title: "Partner",
         link: "/partners",
         active: false,
         items: []
@@ -584,11 +589,10 @@ var App = {
       text: "Tony Ngo, Founder and President"
     },
     stories: [
-      "Since 2007 when he first met with management teams in Vietnam as an investor, Tony Ngo has observed the need and potential for talented young leaders to shape the trajectory of Vietnam's development. In 2009, Tony founded 'Interns in Vietnam' (IIV) to develop leaders who will not only succeed on an individual level, but will also make a difference by driving business, economic, and social changes in their communities.",
-      'In 2009, Tony founded "Interns in Vietnam" (IIV).',
-      "IIV is predicated on cultivating professional development and leadership skills, and IIV’s first initiative achieves this through a summer internship program that connects high-achieving students with opportunities in Vietnam. The initial program successfully placed five students at Horizon Capital and IDG Ventures Vietnam in the summer of 2009.",
-      "In 2010, IIV partnered with Sponsors for Educational Opportunity (SEO), a U.S based non-profit organization that provides educational and career programs to young people from underserved communities, to form SEO-Vietnam.",
-      "In its first year, SEO-Vietnam received over 180 applications and successfully placed 13 students in 7 firms at several prestigious financial services, retail, and non-profit organizations in Vietnam. The program also expanded to include rigorous training, mentorship and a Summer Seminar Series that featured executives and leaders in business, government and non-profit organizations."
+      'As an investor in Asia broadly and Vietnam specifically, Tony Ngo heard from corporate and social leaders about their pressing needs for talent.  With Vietnam opening to the global economy, opportunities were everywhere, but seasoned managers who could compete and innovate were scarce.  Then in 2009, Tony founded "Interns in Vietnam" (IIV) to develop leaders who would not only succeed as individuals, but also make a difference by driving business, economic, and social change.  To entice supporters and applicants, IIV wrapped this leadership development vision in an intensive internship program targeting top university students.',
+      'The initial program placed five students at Horizon Capital and IDG Ventures Vietnam in the summer of 2009.  In 2010, under the direction of Napoleon Ta, IIV became an affiliate of Sponsors for Educational Opportunity (SEO), a U.S based non-profit organization that provides educational and career programs to young people from underserved communities.  Thus, we formed SEO-Vietnam.',
+      "Since then we have grown dramatically each year.  We have expanded the signature SEO-Vietnam Career Program to include two sessions in HCMC (Spring and Summer) as well as one in Hanoi (Summer).  Additionally, we also run Momentum in an effort to broaden our impact to a wider base of students",
+      "The strength of SEO-Vietnam lies with the passion and commitment of our alumni.  We operate on a 100% volunteer basis, yet we expect to serve over 100 students a year through our four intense programs."
     ],
     vision: "SEO-Vietnam is a non-profit organization founded in 2009 with a vision to create a powerful network of support and develop leadership capacity among professionals who will make a difference in Vietnam. We aspire to be a driving force that will propel young, bright-minded and ambitious Vietnamese forward for a successful future of Vietnam by giving them guidance and opportunities to grow. We aim to inspire them to cultivate intellect, character, integrity and a sense of social responsibility for the progressive and sustainable development of the nation.",
     mission: [
@@ -749,6 +753,13 @@ var App = {
         title: "Momentum Program Director",
         description: "Co-Founder at GAP Institute",
         link: "https://vn.linkedin.com/in/giakhanh"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Tim-Nguyen_External-Relations.jpg",
+        name: "Anh Huynh",
+        title: "Media Relations Manager",
+        description: "Researcher at YouGov",
+        link: "https://uk.linkedin.com/in/htta1"
       }
     ]
   },

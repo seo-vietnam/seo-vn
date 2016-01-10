@@ -12,13 +12,14 @@
       li
         a(href="{{App.footer.item5.link}}") {{App.footer.item5.name}}
   .footer__email
-    span Email:&nbsp;&nbsp;
+    span Contact Us:&nbsp;&nbsp;
     a.footer__email__link(href="mailto:{{App.footer.email}}")
       span {{App.footer.email}}
   .footer__shares
-    a(href="http://facebook.com/seovie")
+    a(href="{{App.footer.contact.facebook}}")
       i.fa.fa-facebook-square
-    a(href="https://www.youtube.com/channel/UChjyPWxFmtRUxzjZ4XZk1yw")
+    a(href="{{App.footer.contact.youtube}}")
       i.fa.fa-youtube-square
-    a(href="#")
-      i.fa.fa-instagram
+    a(href="{{App.footer.contact.linkedin}}")
+      i.fa.fa-linkedin-square
+      
