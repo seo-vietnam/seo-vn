@@ -16,7 +16,8 @@ var App = {
     detail : "Detail",
     search: "Search",
     startMyApplication: "Start My Application",
-    beAMomentumPartner: "Be a Momentum Partner"
+    beAMomentumPartner: "Be a Momentum Partner",
+    beAPartner: "Be a Partner"
   },
 
   homeMenu: {
@@ -82,6 +83,7 @@ var App = {
       deadline: {date: "15/01/16", description: "Deadline to Apply for 2016 Summer Program"}
     },
     process: {
+      header: "Summer Career Program",
       title: "Summer Application Process Timeline",
       rounds: [
         {name: "Round 1", time: "15/12 - 15/01"},
@@ -95,6 +97,10 @@ var App = {
         content: "SEO-Vietnam's placement process connects our students with top-notch financial services, retail, and non-profit organizations in Vietnam. Our career program also include rigorous training, mentorship and a Summer Seminar Series that featured executives and leaders in business, government and non-profit organizations"
       }
     }
+  },
+
+  beAPartner : {
+    title: "Become An Employee Partner"
   },
 
   partners : {
@@ -287,7 +293,7 @@ var App = {
         active: false,
         items: []
       }, {
-        title: "Partner",
+        title: "Partners",
         link: "/partners",
         active: false,
         items: []
@@ -368,7 +374,7 @@ var App = {
       partner: {
         title: "Partner",
         image: "/assets/images/programs/momentum/Partner_SEO-V.png",
-        link: "#"
+        link: "http://www.vietseeds.org/"
       },
       projects: {
         title: "Projects",
@@ -655,7 +661,7 @@ var App = {
         link: "https://vn.linkedin.com/in/danarhdoan"
       },
       {
-        image: "http://placehold.it/300x300?text=Person",
+        image: "/assets/images/about-us/Board_Giang.jpg",
         name: "Giang Nguyen",
         title: "Board Member",
         description: "Head of Investment Banking South at Saigon Securities Inc.",
@@ -748,14 +754,14 @@ var App = {
         link: 'https://vn.linkedin.com/in/anh-"tim"-le-nguyen-52268630'
       },
       {
-        image: "http://placehold.it/300x300?text=Person",
-        name: "Khanh Nguyen",
+        image: "/assets/images/about-us/Exec_Khanh-Ngo.jpg",
+        name: "Khanh Ngo",
         title: "Momentum Program Director",
         description: "Co-Founder at GAP Institute",
         link: "https://vn.linkedin.com/in/giakhanh"
       },
       {
-        image: "/assets/images/about-us/Exec_Tim-Nguyen_External-Relations.jpg",
+        image: "/assets/images/about-us/Exec_Anh-Huynh.jpg",
         name: "Anh Huynh",
         title: "Media Relations Manager",
         description: "Researcher at YouGov",
@@ -772,8 +778,8 @@ var App = {
     payment: [
       {
         name : "By Paypal",
-        link: "#",
-        type: 1
+        link: "https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=3iRjzWmfOE8Opuju6FC0xamRJMgqNZ6Kg-GmW9NV9uIyr38XLgR8WlCcI9i&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2",
+        type: 2
       },
       {
         name : "By Venmo (for those in the US/EU)",
@@ -790,7 +796,7 @@ var App = {
         type: 3
       }
     ],
-    image: "http://placehold.it/1200x300?text=Image",
+    image: "/assets/images/donate/donate-picture.jpg",
     video: "https://www.youtube.com/embed/KOO6MdLuUaU"
   }
 };

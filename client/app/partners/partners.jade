@@ -6,6 +6,8 @@ header
     .row
       aside.col-xs-4.col-sm-3
         .row.side-bar
+          a(href="/be-a-partner")
+            .btn.side-bar__item__button {{App.button.beAPartner}}
           a(href="#" ng-click="filter('all', $event)")
             h4.side-bar__item__title.side-bar__item--active {{App.partners.sideBarTitle}}
           .side-bar__item(ng-repeat="item in menuFilters")

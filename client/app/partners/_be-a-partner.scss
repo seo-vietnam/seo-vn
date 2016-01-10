@@ -1,0 +1,45 @@
+.be-a-partner {
+  padding-top: 100px;
+  font-family: $font-medium;
+  font-size: 16px;
+  .container {
+    background-color: white;
+  }
+  &__title {
+    padding-top: 20px;
+    text-align: center;
+    color: $green;
+    font-size: $page-title-size;
+  }
+
+  &__main {
+    margin-bottom: 50px;
+    &__img {
+      text-align: center;
+      margin-bottom: 25px;
+      img {
+        width: 90%;
+        height: auto;
+      }
+    }
+    &__title {
+      text-transform: uppercase;
+      font-family: $font-pd;
+      font-weight: bold;
+      &:after {
+        content: ":";
+      }
+    }
+
+    &__content {
+      &--container {
+        margin-top: 25px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+    }
+  }
+
+}

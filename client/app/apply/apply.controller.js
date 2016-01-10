@@ -13,5 +13,6 @@
                 dots: false
             };
             $(".owl-carousel").owlCarousel(option);
+            $("html, body").scrollTop(0);
     });
 })();

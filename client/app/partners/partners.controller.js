@@ -50,6 +50,6 @@
             };
 
             $scope.filter('all', null);
-            $(".partners").scrollTop(0);
+            $("html, body").scrollTop(0);
     });
 })();

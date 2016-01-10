@@ -19,6 +19,21 @@
     h1 {
       font-family: $font-ls;
     }
+    &__button {
+      width: 100%;
+      border: 1px solid;
+      margin-bottom: 50px;
+      background: $green;
+      color: white;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: $font-pd;
+      opacity: 1;
+      &:hover {
+        opacity: 0.9;
+        color: white;
+      }
+    }
     &__title {
       text-transform: uppercase;
       font-family: $font-ls;

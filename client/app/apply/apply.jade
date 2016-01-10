@@ -15,7 +15,7 @@ header
             h3.apply__banner__content__left__title {{App.apply.left.fact2.title}}
             .apply__banner__content__left__description {{App.apply.left.fact2.description}}
             .apply__banner__content__left__link
-              a(href="/about-us") &#8594;&nbsp&nbsp{{App.button.learnMore}}
+              a(href="/about-us-vmv") &#8594;&nbsp&nbsp{{App.button.learnMore}}
         .apply__banner__content__right.col-xs-6
           h3.apply__banner__content__right__title {{App.apply.right.title}}
           .apply__banner__content__right__event(ng-repeat="event in App.apply.right.events")
@@ -27,6 +27,8 @@ header
             a(href="http://apply.seo-vietnam.org/Account/Login")
               span {{App.button.startMyApplication}}
     .apply__process
+      .row
+        h2.apply__process__title {{App.apply.process.header}}
       .row
         .col-sm-4
           .apply__process__table__title.apply__process__table__title--right

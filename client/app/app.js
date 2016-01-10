@@ -108,13 +108,23 @@ angular.module('alBookingApp', [
                 },
                 params: {active: "people"}
             })
+            .state('be-a-partner', {
+              url: '/be-a-partner',
+              views: {
+                "main" : {
+                  templateUrl: 'app/partners/be-a-partner.html',
+                  controller: 'BeAPartnerController'
+                }
+              },
+              params: {active: "people"}
+            })
         ;
     })
     .controller('AppController', function ($rootScope, $scope) {
         $rootScope.App = App;
         $scope.pageTitle = App.pageTitle.home;
 
-        $scope.isActive = function(menu) {
+        $scope.isActived = function(menu) {
             return $scope.activeMenu == menu;
         };
     })

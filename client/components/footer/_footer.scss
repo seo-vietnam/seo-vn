@@ -56,15 +56,24 @@
       margin-top: 0;
     }
 
+    &--red {
+      color: #cc181e;
+    }
+    &--blue {
+      color: #3B5998;
+    }
+    &--green {
+      color: #0077b5;
+    }
     a {
       margin-left: 10px;
       text-decoration: none;
-      color: $green;
-      &:hover {
-        color: $light-green;
-      }
       i {
+        opacity: 1;
         font-size: 40px;
+        &:hover {
+          opacity: 0.9;
+        }
       }
     }
   }
