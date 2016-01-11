@@ -115,8 +115,7 @@ angular.module('alBookingApp', [
                   templateUrl: 'app/partners/be-a-partner.html',
                   controller: 'BeAPartnerController'
                 }
-              },
-              params: {active: "people"}
+              }
             })
         ;
     })
@@ -128,4 +127,114 @@ angular.module('alBookingApp', [
             return $scope.activeMenu == menu;
         };
     })
+  .controller('AboutUsController', function ($scope, $stateParams) {
+    $scope.$parent.pageTitle = App.pageTitle.about;
+    $scope.$parent.activeMenu = App.pageMenu.item1.name;
+    $scope.menuFilters = App.aboutUs.sideBar;
+    $scope.isActive = function (active) {
+      return active === $stateParams.active;
+    };
+
+    $("html, body").scrollTop(0);
+  })
+  .controller('ApplyController', function ($scope) {
+    $scope.$parent.pageTitle = App.pageTitle.apply;
+    $scope.$parent.activeMenu = App.pageMenu.item2.name;
+    var option = {
+      items: 1,
+      smartSpeed: 500,
+      loop: false,
+      nav: true,
+      navText: ['<a class="prev apply__carousel__item__link" href="javascript:void(0)"><span class="glyphicon glyphicon-triangle-left"></span></a>', '<a class="next apply__carousel__item__link" href="javascript:void(0)"><span class="glyphicon glyphicon-triangle-right"></span></a>'],
+      dots: false
+    };
+    $(".owl-carousel").owlCarousel(option);
+    $("html, body").scrollTop(0);
+  })
+  .controller('DonateController', function ($scope, $sce) {
+    $scope.$parent.pageTitle = App.pageTitle.donate;
+    $scope.$parent.activeMenu =  App.pageMenu.item5.name;
+    $scope.videoSrc = $sce.trustAsResourceUrl(App.donate.video);
+    $("html, body").scrollTop(0);
+  })
+  .controller('MainController', function ($scope) {
+    $scope.$parent.pageTitle = App.pageTitle.home;
+    $("html, body").scrollTop(0);
+  })
+  .controller('MomentumProgramController', function ($scope, $http) {
+    $scope.$parent.pageTitle = App.pageTitle.momentum;
+    $scope.$parent.activeMenu =  App.pageMenu.item3.name;
+    $scope.menuFilters = App.momentumProgram.sideBar;
+    $("html, body").scrollTop(0);
+  })
+  .controller('BeAPartnerController', function ($scope, $http) {
+    $scope.$parent.pageTitle = App.pageTitle.partner;
+    $scope.$parent.activeMenu =  App.pageMenu.item4.name;
+    $("html, body").scrollTop(0);
+
+  })
+  .controller('PartnersController', function ($scope, $http) {
+    $scope.$parent.pageTitle = App.pageTitle.partner;
+    $scope.$parent.activeMenu =  App.pageMenu.item4.name;
+    $scope.enableOpacity = false;
+    $scope.menuFilters = App.partners.sideBars;
+    $scope.branches = [];
+    $scope.filter = function(data, event) {
+      $scope.branches = [];
+      $('.branch-grid__item').removeClass("branch-grid__item--opacity");
+      if (data === undefined || data === null) {
+        return;
+      }
+      if (data === 'all') {
+        var golds = [];
+        var silvers = [];
+        var normals = [];
+        for (var i=0; i<App.partners.sideBars.length; i++) {
+          Array.prototype.push.apply(golds, App.partners.sideBars[i].items.golds);
+          Array.prototype.push.apply(silvers, App.partners.sideBars[i].items.silvers);
+          Array.prototype.push.apply(normals, App.partners.sideBars[i].items.normals);
+        }
+        Array.prototype.push.apply($scope.branches, golds);
+        Array.prototype.push.apply($scope.branches, silvers);
+        Array.prototype.push.apply($scope.branches, normals);
+      } else {
+        for (var j=0; j<App.partners.sideBars.length; j++) {
+          if (App.partners.sideBars[j].title.toLowerCase() === data.toLowerCase()) {
+            Array.prototype.push.apply($scope.branches, App.partners.sideBars[j].items.golds);
+            Array.prototype.push.apply($scope.branches, App.partners.sideBars[j].items.silvers);
+            Array.prototype.push.apply($scope.branches, App.partners.sideBars[j].items.normals);
+            break;
+          }
+        }
+      }
+
+      if (event !== undefined && event !== null) {
+        $('.side-bar__item__title').removeClass('side-bar__item--active');
+        var element = angular.element(event.currentTarget.firstChild);
+        element.addClass('side-bar__item--active');
+        //if (data === 'all') {
+        //    //$('.side-bar__item__branch--container').show();
+        //} else {
+        $('.side-bar__item__branch--container').hide();
+        $(event.currentTarget.nextSibling).show();
+        //}
+      }
+    };
+
+    $scope.filter('all', null);
+    $("html, body").scrollTop(0);
+  })
+  .controller('PastProgramsController', function ($scope, $http) {
+    $scope.$parent.pageTitle = App.pageTitle.pastProgram;
+    $scope.$parent.activeMenu =  App.pageMenu.item3.name;
+    $scope.menuFilters = App.pastPrograms.sideBar;
+
+    $("html, body").scrollTop(0);
+  })
+  .controller('ProgramsController', function ($scope, $http) {
+    $scope.$parent.pageTitle = App.pageTitle.program;
+    $scope.$parent.activeMenu =  App.pageMenu.item3.name;
+    $scope.menuFilters = App.program.sideBar;
+    $("html, body").scrollTop(0);
+  })
 ;
