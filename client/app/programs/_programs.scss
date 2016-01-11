@@ -1,7 +1,7 @@
 .programs {
-  padding-top: 100px;
+  padding-top: 160px;
   @media (min-width: $screen-desktop) {
-    padding-top: 110px;
+    padding-top: 210px;
   };
   //background-color: $very-light-gray;
   font-size: 14px;
@@ -15,7 +15,7 @@
     background-color: white;
   }
   &__title {
-    padding: 20px 0 30px 0;
+    padding: 150px 0 30px 0;
     text-align: center;
     color: $green;
     font-size: $page-title-size;
@@ -25,6 +25,7 @@
     margin: 0;
 
     &__block {
+      padding-top: 100px;
       padding-bottom: 20px;
       &__title {
         text-align: center;
@@ -43,7 +44,6 @@
       }
 
       &__left {
-
       }
 
       &__right {
@@ -52,9 +52,9 @@
 
       &__line {
         font-weight: bold;
-        font-size: 12px;
-        @media(min-width: $screen-phone) {
-          font-size: 14px;
+        font-size: 14px;
+        @media(min-width: $screen-tablet) {
+          font-size: 17px;
         }
       }
     }
@@ -63,16 +63,27 @@
       clear: both;
       border-top: 1px solid;
       border-bottom: 1px solid;
+      @media(min-width: $screen-tablet) {
+          //margin-top: 50px;
+          padding-bottom: 50px;
+          }
+
       &__head-title {
         text-align: center;
         color: $green;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        @media (min-width: $screen-tablet) {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
       }
 
       &__item {
         padding-bottom: 100px;
         &:nth-last-child(1) {
-          padding-bottom: 50px;
+          padding-bottom: 30px;
+
         }
         &__title {
           padding-left: 15px;
@@ -85,6 +96,7 @@
           }
           @media(min-width: $screen-desktop) {
             padding-left: 100px;
+            font-size: 20px;
           }
         }
         &__content {
@@ -110,12 +122,16 @@
 
     &__speech {
       text-align: right;
-      margin: 50px 0 50px 0;
+      margin: 40px 0 40px 0;
       color: $green;
+      @media (mid-width: $screen-tablet) {
+        margin: 70px 0 70px 0;
+      }
+
       &__text {
         font-size: 16px;
         @media (min-width: $screen-tablet) {
-          font-size: 18px;
+          font-size: 22px;
         }
       }
       &__owner {
