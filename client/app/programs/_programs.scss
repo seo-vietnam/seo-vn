@@ -1,8 +1,5 @@
 .programs {
-  padding-top: 160px;
-  @media (min-width: $screen-desktop) {
-    padding-top: 210px;
-  };
+  padding-top: 100px;
   //background-color: $very-light-gray;
   font-size: 14px;
   line-height: 1.5;
@@ -15,7 +12,7 @@
     background-color: white;
   }
   &__title {
-    padding: 150px 0 30px 0;
+    padding: 20px 0 30px 0;
     text-align: center;
     color: $green;
     font-size: $page-title-size;

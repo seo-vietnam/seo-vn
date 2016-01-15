@@ -22,9 +22,10 @@ var App = {
 
   homeMenu: {
     item1 : {name: "About Us", link: "/about-us"},
-    item2 : {name: "Programs", link: "/programs"},
-    item3 : {name: "Partners", link: "/partners"},
-    item4 : {name: "Donate", link: "/donate"}
+    item2 : {name: "Apply", link: "/apply"},
+    item3 : {name: "Programs", link: "/programs"},
+    item4 : {name: "Partners", link: "/partners"},
+    item5 : {name: "Donate", link: "/donate"}
   },
 
   pageMenu: {
@@ -63,8 +64,8 @@ var App = {
     "partner" : {
       title : "Our Partners",
       description: "SEO-Vietnam has successfully partnered with 35 prestigious financial services, retail, and non-profit organizations to provide the best internship experience to our students in Vietnam",
-      golds: ["/assets/images/logo/VN_Esports.png", "/assets/images/logo/PWC.png", "/assets/images/logo/PM-Vinataba.jpg", "/assets/images/logo/EY.png"],
-      silvers: ["/assets/images/logo/HSC.jpg", "/assets/images/logo/Yola.jpg", "/assets/images/logo/Kinh_Do.png", "/assets/images/logo/E2.gif", "/assets/images/logo/VinaCapital.jpg", "/assets/images/logo/Horizon.jpg"]
+      golds: ["/assets/images/logo/VN_Esports.png", "/assets/images/logo/Kinh_Do.png", "/assets/images/logo/VIG.png","/assets/images/logo/PM-Vinataba.jpg", "/assets/images/logo/EY.png"],
+      silvers: ["/assets/images/logo/HSC.jpg", "/assets/images/logo/Yola.jpg", "/assets/images/logo/E2.gif", "/assets/images/logo/VinaCapital.jpg", "/assets/images/logo/Horizon.jpg"]
     }
   },
 
@@ -77,19 +78,20 @@ var App = {
     right: {
       title: "Dates and Deadlines",
       events: [
-        {date: "01/16", name:"VN/Asia Webinar (Time TBD)"},
-        {date: "20/12/15", name:"US/Europe Webinar (10 a.m. EST - 11 a.m. EST)"}
       ],
-      deadline: {date: "15/01/16", description: "Deadline to Apply for 2016 Summer Program"}
+      deadlines: [
+        {date: "30/09/15", description: "Deadline to Apply for 2016 Spring Program"},
+        {date: "15/01/16", description: "Deadline to Apply for 2016 Summer Program"}
+      ]
     },
     process: {
       header: "Summer Career Program",
       title: "Summer Application Process Timeline",
       rounds: [
-        {name: "Round 1", time: "15/12 - 15/01"},
-        {name: "Round 2", time: "15/02 - 04/03"},
-        {name: "Round 3", time: "16/03 - 16/04"},
-        {name: "Final Offer", time: "April 2016"}
+        {name: "Round 1 (Written Application)", time: "15/12 - 15/01"},
+        {name: "Round 2 (SEO-V Interview)", time: "15/02 - 04/03"},
+        {name: "Round 3 (Employer Interview)", time: "16/03 - 16/04"},
+        {name: "Final Offer", time: "April"}
       ],
       paragraph: {
         title: "SEO-Vietnam Career Program",
@@ -100,7 +102,7 @@ var App = {
   },
 
   beAPartner : {
-    title: "Become An Employee Partner"
+    title: "Become An Employer Partner"
   },
 
   partners : {
@@ -740,11 +742,18 @@ var App = {
         link: "#"
       },
       {
-        image: "/assets/images/about-us/Exec_Thu-Nguyen.jpg",
-        name: "Thu Nguyen",
-        title: "HCMC Ops Director",
-        description: "Marketing & Business Development Analyst at Everest Education",
-        link: "https://vn.linkedin.com/in/thu-nguyen-89071730"
+        image: "/assets/images/about-us/Exec_Long-Ngo.jpg",
+        name: "Long Ngo",
+        title: "HCMC Ops Co-Director",
+        description: "Senior at University of Medicine and Pharmacy in HCMC",
+        link: "https://vn.linkedin.com/in/kimlongngo"
+      },
+      {
+        image: "/assets/images/about-us/Exec_Hanh-Nguyen.jpg",
+        name: "Hanh Nguyen",
+        title: "HCMC Ops Co-Director",
+        description: "",
+        link: "https://vn.linkedin.com/in/h%E1%BA%A1nh-nguy%E1%BB%85n-8a648b55"
       },
       {
         image: "/assets/images/about-us/Exec_Tim-Nguyen_External-Relations.jpg",
@@ -778,8 +787,8 @@ var App = {
     payment: [
       {
         name : "By Paypal",
-        link: "https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=3iRjzWmfOE8Opuju6FC0xamRJMgqNZ6Kg-GmW9NV9uIyr38XLgR8WlCcI9i&dispatch=5885d80a13c0db1f8e263663d3faee8d64ad11bbf4d2a5a1a0d303a50933f9b2",
-        type: 2
+        link: "#",
+        type: 1
       },
       {
         name : "By Venmo (for those in the US/EU)",

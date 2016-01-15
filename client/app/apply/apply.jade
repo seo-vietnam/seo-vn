@@ -21,8 +21,8 @@ header
           .apply__banner__content__right__event(ng-repeat="event in App.apply.right.events")
             p {{event.date}}:&nbsp{{event.name}}
             p {{event.location}}
-          .apply__banner__content__right__deadline
-            p {{App.apply.right.deadline.date}}:&nbsp{{App.apply.right.deadline.description}}
+          .apply__banner__content__right__deadline(ng-repeat="deadline in App.apply.right.deadlines")
+            p {{deadline.date}}:&nbsp{{deadline.description}}
           .btn.apply__banner__content__right__button
             a(href="http://apply.seo-vietnam.org/Account/Login")
               span {{App.button.startMyApplication}}
