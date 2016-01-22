@@ -358,7 +358,7 @@ var App = {
         active: false,
         items: []
       }, {
-        title: "Be a partner",
+        title: "Partners",
         link: "/partners",
         active: false,
         items: []
@@ -417,7 +417,7 @@ var App = {
         active: false,
         items: []
       }, {
-        title: "Be a partner",
+        title: "Partners",
         link: "/partners",
         active: false,
         items: []

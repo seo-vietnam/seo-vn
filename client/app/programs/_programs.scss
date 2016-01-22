@@ -22,7 +22,6 @@
     margin: 0;
 
     &__block {
-      padding-top: 100px;
       padding-bottom: 20px;
       &__title {
         text-align: center;
@@ -121,7 +120,7 @@
       text-align: right;
       margin: 40px 0 40px 0;
       color: $green;
-      @media (mid-width: $screen-tablet) {
+      @media (min-width: $screen-tablet) {
         margin: 70px 0 70px 0;
       }
 
